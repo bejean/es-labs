@@ -1,0 +1,60 @@
+# Domains allowed for the crawl
+domains:
+  - url: https://www.20minutes.fr
+    seed_urls:
+      - https://www.20minutes.fr/high-tech/
+
+    crawl_rules:
+      - policy: allow       
+        type: begins       
+        pattern: /high-tech
+      - policy: deny
+        type: regex
+        pattern: .*
+
+    extraction_rulesets:
+      - url_filters:
+          - type: begins           
+            pattern: /high-tech
+        rules:
+          - action: extract
+            field_name: publication_date
+            selector: //*[@id="page-content"]/section[1]/div/div[2]/article/header/a/address/div[2]/p[2]/time
+            join_as: string         
+            value: yes             
+            source: html           
+          - action: extract        
+            field_name: author     
+            selector: //*[@id="page-content"]/section[1]/div/div[2]/article/header//address/div[2]/p[1]     
+            join_as: array         
+            value: yes             
+            source: html           
+          - action: extract        
+            field_name: article     
+            selector: //*[@id="page-content"]/section[1]/div/div[2]/article/div[2]    
+            join_as: string         
+            value: yes             
+            source: html           
+
+# Where to send the results. Possible values are console, file, or elasticsearch
+output_sink: file
+
+# Whether or not to include the full HTML in the crawl result
+full_html_extraction_enabled: false
+
+
+## Local directory to output crawl results. The defult value is ./crawled_docs
+##   This will appear at the top level of your Open Crawler directory if running from source,
+##   and under the home/app/ directory inside your container if running via Docker.
+output_dir: /output/20-minutes-high-tech
+
+# Crawl tuning
+max_crawl_depth: 5
+
+# Crawl result field size limits
+max_title_size: 500
+max_body_size: 5_242_880 # 5 megabytes
+max_keywords_size: 512
+max_description_size: 512
+max_indexed_links_count: 5
+max_headings_count: 5
