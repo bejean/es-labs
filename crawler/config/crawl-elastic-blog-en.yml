@@ -1,0 +1,68 @@
+# This is a sample config file for crawling the parksaustralia.gov.au website writing output to an ES index
+#
+# The configuration options in this example are not exhaustive. To see all possible configuration options,
+# reference the config templates:
+# - config/crawler.yml.example
+# - config/elasticsearch.yml.example
+
+# Domains allowed for the crawl
+domains:
+  - url: https://www.elastic.co
+    seed_urls:
+      - https://www.elastic.co/blog
+    sitemap_urls:
+      - https://www.elastic.co/sitemap.xml
+
+    crawl_rules:
+      - policy: deny       
+        type: begins       
+        pattern: /blog/author
+      - policy: deny       
+        type: begins       
+        pattern: /blog/category
+      - policy: allow       
+        type: begins      
+        pattern: /blog
+      - policy: deny
+        type: regex
+        pattern: .*
+
+    extraction_rulesets:
+      - url_filters:
+          - type: begins           
+            pattern: /blog 
+        rules:
+          - action: extract
+            field_name: publication_date
+            #selector: .author-desc > time:nth-child(2)
+            selector: /html/body/div[1]/main/div/div[1]/div/article/div/div[2]/div/time
+            join_as: string         
+            value: yes             
+            source: html           
+          - action: extract        
+            field_name: author     
+            #selector: .author-name > p:nth-child(1)   
+            selector: /html/body/div[1]/main/div/div[1]/div/article/div/div[2]/div/div/a/p        
+            join_as: array         
+            value: yes             
+            source: html           
+
+
+# Where to send the results. Possible values are console, file, or elasticsearch
+output_sink: file
+
+## Local directory to output crawl results. The defult value is ./crawled_docs
+##   This will appear at the top level of your Open Crawler directory if running from source,
+##   and under the home/app/ directory inside your container if running via Docker.
+output_dir: /output/elastic-blog-en
+
+# Crawl tuning
+max_crawl_depth: 2
+
+# Crawl result field size limits
+max_title_size: 500
+max_body_size: 5_242_880 # 5 megabytes
+max_keywords_size: 512
+max_description_size: 512
+max_indexed_links_count: 5
+max_headings_count: 10

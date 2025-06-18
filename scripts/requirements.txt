@@ -1,0 +1,14 @@
+ipywidgets
+transformers
+transformers[torch]
+tiktoken
+protobuf
+sentencepiece
+elasticsearch
+keybert
+pytextrank
+keybert
+ctransformers[cuda]
+huggingface_hub[hf_xet]
+hf_xet
+readability-lxml
