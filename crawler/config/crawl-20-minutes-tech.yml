@@ -19,7 +19,7 @@ domains:
         rules:
           - action: extract
             field_name: publication_date
-            selector: //*[@id="page-content"]/section[1]/div/div[2]/article/header/a/address/div[2]/p[2]/time
+            selector: //*[@id="page-content"]/section[1]/div/div[2]/article/header//address/div[2]/p[2]
             join_as: string         
             value: yes             
             source: html           
