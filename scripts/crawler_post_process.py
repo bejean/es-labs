@@ -67,8 +67,8 @@ def write_output_files(output_list, output_directory, output_count):
 
 
 # --- Main Processing
-def main(directory_input):
-    ITEMS_BY_OUTPUT_FILE=10
+def main(directory_input, items_by_output_file):
+    """Main function"""
 
     print(f"Starting Crawl post processing {directory_input}")
 
@@ -126,7 +126,7 @@ def main(directory_input):
                     output_list.append(data)
                     processed_output +=1
 
-                    if len(output_list) >= ITEMS_BY_OUTPUT_FILE:
+                    if len(output_list) >= items_by_output_file:
                         output_count += 1
                         write_output_files(output_list, directory_output, output_count)
                         output_list = []
@@ -147,4 +147,5 @@ if __name__ == "__main__":
     args = parser.parse_args()
     directory_input = args.input
 
-    main(directory_input)
+    ITEMS_BY_OUTPUT_FILE = 10
+    main(directory_input, ITEMS_BY_OUTPUT_FILE)
