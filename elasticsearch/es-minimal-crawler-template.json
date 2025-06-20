@@ -62,9 +62,6 @@
           "keyword": {
             "type": "keyword",
             "ignore_above": 256
-          },
-          "semantic": {
-            "type": "semantic_text"
           }
         }
       },
