@@ -2,7 +2,7 @@
 import argparse
 import json
 import os
-from spacy_llm.util import assemble
+from nlp_ner import NlpNerFactory
 
 
 # --- Functions
@@ -16,7 +16,7 @@ def write_output_files(output_list, output_directory, output_count):
 
 
 # --- Main Processing
-def main(directory_input, api_key_file, ner_config_file, items_by_output_file):
+def main(directory_input, ner_mode, api_key_file, ner_config_file, ner_model, items_by_output_file):
     """Main function"""
 
     if not os.path.exists(ner_config_file):
@@ -36,8 +36,6 @@ def main(directory_input, api_key_file, ner_config_file, items_by_output_file):
             print(f"An error occurred: {e}")
             return
 
-    tags_labels_mapping = {'ORGANISATION': 'ORG', 'PERSON': 'PER', 'LOCATION': 'LOC'}
-
     print(f"Starting Crawl post processing {directory_input}")
 
     directory_output = directory_input + '/ner'
@@ -55,7 +53,16 @@ def main(directory_input, api_key_file, ner_config_file, items_by_output_file):
     processed_skipped = 0
     processed_output = 0
 
-    nlp = assemble(ner_config_file)
+    match ner_mode:
+        case 'spacy':
+            nlp = NlpNerFactory.build("spacy", model=ner_model)
+        case 'spacy_llm':
+            nlp = NlpNerFactory.build("spacy_llm", config_file=ner_config_file)
+        case 'transformers':
+            nlp = NlpNerFactory.build("transformers", model=ner_model)
+        case _:
+            print("Invalid NER mode")
+            return
 
     output_count = 0
     output_list = []
@@ -73,19 +80,7 @@ def main(directory_input, api_key_file, ner_config_file, items_by_output_file):
 
                     for doc in arr:
                         text = doc["title"] + doc ["meta_description"]
-                        doc_ner = nlp(text)
-                        tags = {}
-                        tags_insensitive = {}
-
-                        for ent in doc_ner.ents:
-                            if ent.label_ in tags_labels_mapping:
-                                if tags_labels_mapping[ent.label_] not in tags:
-                                    tags[tags_labels_mapping[ent.label_]] = []
-                                    tags_insensitive[tags_labels_mapping[ent.label_]] = []
-
-                                if ent.text.lower() not in tags_insensitive[tags_labels_mapping[ent.label_]]:
-                                    tags[tags_labels_mapping[ent.label_]].append(ent.text)
-                                    tags_insensitive[tags_labels_mapping[ent.label_]].append(ent.text.lower())
+                        tags = nlp.get_entities(text)
 
                         doc["tags"] = tags
 
@@ -109,12 +104,16 @@ def main(directory_input, api_key_file, ner_config_file, items_by_output_file):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Crawler post process script.")
     parser.add_argument("-i", "--input", required=True, type=str, help="Input directory")
+    parser.add_argument("-m", "--mode", required=True, type=str, help="Mode")
     parser.add_argument("-k", "--api_key_file", required=False, type=str, help="API Key")
-    parser.add_argument("-n", "--ner_config_file", required=False, type=str, help="API Key")
+    parser.add_argument("-c", "--config_file", required=False, type=str, help="Configuration file")
+    parser.add_argument("-m", "--model", required=False, type=str, help="Model name")
     args = parser.parse_args()
     directory_input = args.input
+    ner_mode = args.mode
     api_key_file = args.api_key_file
-    ner_config_file = args.ner_config_file
+    ner_config_file = args.config_file
+    ner_model = args.model
 
     ITEMS_BY_OUTPUT_FILE = 10
-    main(directory_input, api_key_file, ner_config_file, ITEMS_BY_OUTPUT_FILE)
+    main(directory_input, ner_mode, api_key_file, ner_config_file, ner_model, ITEMS_BY_OUTPUT_FILE)
