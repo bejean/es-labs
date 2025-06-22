@@ -89,7 +89,7 @@ def main(directory_input, items_by_output_file):
 
     output_count = 0
     output_list = []
-    for filename in os.listdir(directory_input):
+    for filename in sorted(os.listdir(directory_input)):
         if filename.endswith(".json"):
             processed_count +=1
             filepath = os.path.join(directory_input, filename)
@@ -134,7 +134,7 @@ def main(directory_input, items_by_output_file):
                 except json.JSONDecodeError as e:
                     print(f"Error parsing {filename}: {e}")
                 except Exception as e:
-                    print(f"Error indexing {filename}: {e}")
+                    print(f"Error processing {filename}: {e}")
 
     if len(output_list) > 0:
         write_output_files(output_list, directory_output, output_count)
