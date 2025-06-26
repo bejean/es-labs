@@ -2,6 +2,7 @@
 import argparse
 import json
 import os
+import time
 from nlp_ner import NlpNerFactory
 
 
@@ -16,12 +17,22 @@ def write_output_files(output_list, output_directory, output_count):
 
 
 # --- Main Processing
-def main(directory_input, ner_mode, api_key_file, ner_config_file, ner_model, items_by_output_file):
+def main(directory_input, ner_mode, api_key_file, ner_config_file, ner_model, output_csv_file, items_by_output_file):
     """Main function"""
 
-    if not os.path.exists(ner_config_file):
-        print(f"Error: The file {ner_config_file} was not found.")
+    if ner_config_file and not os.path.exists(ner_config_file):
+        print(f"Error: The NER configuration file {ner_config_file} was not found.")
         return
+
+    if api_key_file and not os.path.exists(api_key_file):
+        print(f"Error: The API key file {api_key_file} was not found.")
+        return
+
+    if output_csv_file:
+        output_csv_file_path = os.path.dirname(output_csv_file)
+        if not os.path.isdir(output_csv_file_path):
+            print(f"Error: The folder for CSV file {output_csv_file_path} was not found.")
+            return
 
     if api_key_file:
         try:
@@ -38,15 +49,19 @@ def main(directory_input, ner_mode, api_key_file, ner_config_file, ner_model, it
 
     print(f"Starting Crawl post processing {directory_input}")
 
-    directory_output = directory_input + '/ner'
+    if not output_csv_file:
+        directory_output = directory_input + '/ner'
 
-    # Create output directory if it doesn't exist
-    if not os.path.exists(directory_output):
-        try:
-            os.makedirs(directory_output)
-        except OSError as e:
-            print(f"Failed to create output directory {directory_output}: {e}")
-            return
+        # Create output directory if it doesn't exist
+        if not os.path.exists(directory_output):
+            try:
+                os.makedirs(directory_output)
+            except OSError as e:
+                print(f"Failed to create output directory {directory_output}: {e}")
+                return
+
+    else:
+        csv_rows = {}
 
     # === Process files
     processed_count = 0
@@ -69,10 +84,13 @@ def main(directory_input, ner_mode, api_key_file, ner_config_file, ner_model, it
     for filename in sorted(os.listdir(directory_input)):
         if filename.endswith(".json"):
             processed_count +=1
+
             filepath = os.path.join(directory_input, filename)
             with open(filepath, 'r', encoding='utf-8') as file:
                 try:
                     print(f"Processing {filepath}")
+                    start_time_file = time.time()
+
                     data = json.load(file)
                     if not isinstance(data, list):
                         data = [data]
@@ -82,38 +100,74 @@ def main(directory_input, ner_mode, api_key_file, ner_config_file, ner_model, it
                         text = doc["title"] + doc ["meta_description"]
                         tags = nlp.get_entities(text)
 
-                        doc["tags"] = tags
+                        if output_csv_file:
+                            for tag in tags:
+                                entities = tags.get(tag)
+                                for entitie in entities:
+                                    k = tag+':'+entitie
+                                    if not k in csv_rows:
+                                        csv_rows[k]=1
+                                    else:
+                                        csv_rows[k]=csv_rows[k]+1
 
-                        output_list.append(doc)
+                        else:
+                            doc["tags"] = tags
+                            output_list.append(doc)
+
                         processed_output += 1
-                        if len(output_list) >= items_by_output_file:
+                        if not output_csv_file and (len(output_list) >= items_by_output_file):
                             output_count += 1
                             write_output_files(output_list, directory_output, output_count)
                             output_list = []
+
+                    end_time_file = time.time()
+                    duration = end_time_file - start_time_file
+                    file_items_count = len(arr)
+
+                    print(f"File duration: {duration:.2f} seconds for {file_items_count} documents")
 
                 except json.JSONDecodeError as e:
                     print(f"Error parsing {filename}: {e}")
                 except Exception as e:
                     print(f"Error processing {filename}: {e}")
 
-    if len(output_list) > 0:
+    if not output_csv_file and (len(output_list) > 0):
         write_output_files(output_list, directory_output, output_count)
 
-    print(f"Terminating Crawl post processing (Processed : {processed_count} - Accepted : {processed_output} - Skipped : {processed_skipped})")
+    if output_csv_file:
+        import csv
+        with open(output_csv_file, 'w', newline='') as f:
+            writer = csv.writer(f)
+            for row in csv_rows:
+                cols = row.split(":")
+                cols.append(csv_rows[row])
+                writer.writerow(cols)
+
+    print(f"Terminating Crawl post processing (Processed files : {processed_count} - Accepted items : {processed_output} - Skipped items : {processed_skipped})")
 
 if __name__ == "__main__":
+
+    start_time = time.time()
+
     parser = argparse.ArgumentParser(description="Crawler post process script.")
-    parser.add_argument("-i", "--input", required=True, type=str, help="Input directory")
-    parser.add_argument("-m", "--mode", required=True, type=str, help="Mode")
-    parser.add_argument("-k", "--api_key_file", required=False, type=str, help="API Key")
-    parser.add_argument("-c", "--config_file", required=False, type=str, help="Configuration file")
-    parser.add_argument("-m", "--model", required=False, type=str, help="Model name")
+    parser.add_argument("--input", required=True, type=str, help="Input directory")
+    parser.add_argument("--mode", required=True, type=str, help="Mode")
+    parser.add_argument("--api_key_file", required=False, type=str, help="API Key")
+    parser.add_argument("--config_file", required=False, type=str, help="Configuration file")
+    parser.add_argument("--model", required=False, type=str, help="Model name")
+    parser.add_argument("--output_csv_file", required=False, type=str, help="Output CSV file")
     args = parser.parse_args()
     directory_input = args.input
     ner_mode = args.mode
     api_key_file = args.api_key_file
     ner_config_file = args.config_file
     ner_model = args.model
+    output_csv_file = args.output_csv_file
 
     ITEMS_BY_OUTPUT_FILE = 10
-    main(directory_input, ner_mode, api_key_file, ner_config_file, ner_model, ITEMS_BY_OUTPUT_FILE)
+    main(directory_input, ner_mode, api_key_file, ner_config_file, ner_model, output_csv_file, ITEMS_BY_OUTPUT_FILE)
+
+    end_time = time.time()
+    duration = end_time - start_time
+
+    print(f"Script duration: {duration:.2f} seconds")

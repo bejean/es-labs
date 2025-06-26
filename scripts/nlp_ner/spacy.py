@@ -14,13 +14,13 @@ class Spacy(BaseNlpNer):
         for ent in doc.ents:
             label = ent.label_
             text = ent.text
-            if ent.label_ in self.tags_labels_mapping:
-                if self.tags_labels_mapping[ent.label_] not in tags:
-                    tags[self.tags_labels_mapping[ent.label_]] = []
-                    tags_insensitive[self.tags_labels_mapping[ent.label_]] = []
+            if label in self.tags_labels_mapping:
+                if self.tags_labels_mapping[label] not in tags:
+                    tags[self.tags_labels_mapping[label]] = []
+                    tags_insensitive[self.tags_labels_mapping[label]] = []
 
-                if ent.text.lower() not in tags_insensitive[self.tags_labels_mapping[ent.label_]]:
-                    tags[self.tags_labels_mapping[ent.label_]].append(ent.text)
-                    tags_insensitive[self.tags_labels_mapping[ent.label_]].append(ent.text.lower())
+                if text.lower() not in tags_insensitive[self.tags_labels_mapping[label]]:
+                    tags[self.tags_labels_mapping[label]].append(text)
+                    tags_insensitive[self.tags_labels_mapping[label]].append(text.lower())
 
         return tags
