@@ -17,7 +17,7 @@ def write_output_files(output_list, output_directory, output_count):
 
 
 # --- Main Processing
-def main(directory_input, ner_mode, api_key_file, ner_config_file, ner_model, output_csv_file, items_by_output_file):
+def main(directory_input, ner_mode, api_key_file, ner_config_file, ner_model, score_threshold, output_csv_file, items_by_output_file):
     """Main function"""
 
     if ner_config_file and not os.path.exists(ner_config_file):
@@ -74,9 +74,9 @@ def main(directory_input, ner_mode, api_key_file, ner_config_file, ner_model, ou
         case 'spacy_llm':
             nlp = NlpNerFactory.build("spacy_llm", config_file=ner_config_file)
         case 'transformers':
-            nlp = NlpNerFactory.build("transformers", model=ner_model)
+            nlp = NlpNerFactory.build("transformers", model=ner_model, score_threshold=score_threshold)
         case 'flair':
-            nlp = NlpNerFactory.build("flair", model=ner_model)
+            nlp = NlpNerFactory.build("flair", model=ner_model, score_threshold=score_threshold)
         case _:
             print("Invalid NER mode")
             return
@@ -158,6 +158,7 @@ if __name__ == "__main__":
     parser.add_argument("--api_key_file", required=False, type=str, help="API Key")
     parser.add_argument("--config_file", required=False, type=str, help="Configuration file")
     parser.add_argument("--model", required=False, type=str, help="Model name")
+    parser.add_argument("--score_threshold", required=False, type=str, help="Entity score threshold : 0.00 (default) to 1.00")
     parser.add_argument("--output_csv_file", required=False, type=str, help="Output CSV file")
     args = parser.parse_args()
     directory_input = args.input
@@ -165,10 +166,11 @@ if __name__ == "__main__":
     api_key_file = args.api_key_file
     ner_config_file = args.config_file
     ner_model = args.model
+    score_threshold = args.score_threshold
     output_csv_file = args.output_csv_file
 
     ITEMS_BY_OUTPUT_FILE = 10
-    main(directory_input, ner_mode, api_key_file, ner_config_file, ner_model, output_csv_file, ITEMS_BY_OUTPUT_FILE)
+    main(directory_input, ner_mode, api_key_file, ner_config_file, ner_model, score_threshold, output_csv_file, ITEMS_BY_OUTPUT_FILE)
 
     end_time = time.time()
     duration = end_time - start_time

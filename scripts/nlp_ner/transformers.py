@@ -5,9 +5,12 @@ from transformers.pipelines import AggregationStrategy
 from .base_nlpner import BaseNlpNer
 
 class Transformers(BaseNlpNer):
-    def __init__(self, model):
+    def __init__(self, model, score_threshold):
         super().__init__()
-
+        if score_threshold is None:
+            self.score_threshold = 0.0
+        else:
+            self.score_threshold = float(score_threshold)
         self.tokenizer = AutoTokenizer.from_pretrained(model)
         self.model = AutoModelForTokenClassification.from_pretrained(model)
 
@@ -25,9 +28,10 @@ class Transformers(BaseNlpNer):
         tags_insensitive = {}
 
         for entity in entities:
-            entity_label = entity['entity_group']
-            entity_text = entity['word']
-            #entity_score = entity.score
-            super().add_entity_to_tags(entity_label, entity_text, tags, tags_insensitive)
+            entity_score = entity['score']
+            if entity_score >= self.score_threshold:
+                entity_label = entity['entity_group']
+                entity_text = entity['word']
+                super().add_entity_to_tags(entity_label, entity_text, tags, tags_insensitive)
 
         return tags

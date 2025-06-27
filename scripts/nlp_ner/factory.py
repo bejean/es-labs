@@ -11,7 +11,7 @@ class NlpNerFactory:
         if nlp_ner_type == "spacy_llm":
             return SpacyLlm(kwargs["config_file"])
         if nlp_ner_type == "transformers":
-            return Transformers(kwargs["model"])
+            return Transformers(kwargs["model"], kwargs["score_threshold"])
         if nlp_ner_type == "flair":
-            return Flair(kwargs["model"])
+            return Flair(kwargs["model"], kwargs["score_threshold"])
         raise ValueError("Unknown nlp ner type: " + nlp_ner_type)
