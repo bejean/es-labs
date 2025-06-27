@@ -2,3 +2,5 @@ data/
 illustrations/
 ca.crt
 scripts/nlp_ner/__pycache__/
+
+scripts/local-cached/

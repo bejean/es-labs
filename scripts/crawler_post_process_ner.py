@@ -112,7 +112,6 @@ def main(directory_input, ner_mode, api_key_file, ner_config_file, ner_model, sc
                                         csv_rows[k]=1
                                     else:
                                         csv_rows[k]=csv_rows[k]+1
-
                         else:
                             doc["tags"] = tags
                             output_list.append(doc)
