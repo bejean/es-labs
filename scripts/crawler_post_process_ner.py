@@ -75,6 +75,8 @@ def main(directory_input, ner_mode, api_key_file, ner_config_file, ner_model, ou
             nlp = NlpNerFactory.build("spacy_llm", config_file=ner_config_file)
         case 'transformers':
             nlp = NlpNerFactory.build("transformers", model=ner_model)
+        case 'flair':
+            nlp = NlpNerFactory.build("flair", model=ner_model)
         case _:
             print("Invalid NER mode")
             return
@@ -86,7 +88,7 @@ def main(directory_input, ner_mode, api_key_file, ner_config_file, ner_model, ou
             processed_count +=1
 
             filepath = os.path.join(directory_input, filename)
-            with open(filepath, 'r', encoding='utf-8') as file:
+            with (open(filepath, 'r', encoding='utf-8') as file):
                 try:
                     print(f"Processing {filepath}")
                     start_time_file = time.time()
@@ -97,7 +99,8 @@ def main(directory_input, ner_mode, api_key_file, ner_config_file, ner_model, ou
                     arr = data
 
                     for doc in arr:
-                        text = doc["title"] + doc ["meta_description"]
+                        text = (doc["title"] if doc["title"].strip().endswith(".") else doc["title"] + ".") + " " + doc["meta_description"]
+
                         tags = nlp.get_entities(text)
 
                         if output_csv_file:

@@ -8,19 +8,13 @@ class Spacy(BaseNlpNer):
 
     def get_entities(self, text):
         doc = self.nlp(text)
+
         tags = {}
         tags_insensitive = {}
 
         for ent in doc.ents:
-            label = ent.label_
-            text = ent.text
-            if label in self.tags_labels_mapping:
-                if self.tags_labels_mapping[label] not in tags:
-                    tags[self.tags_labels_mapping[label]] = []
-                    tags_insensitive[self.tags_labels_mapping[label]] = []
-
-                if text.lower() not in tags_insensitive[self.tags_labels_mapping[label]]:
-                    tags[self.tags_labels_mapping[label]].append(text)
-                    tags_insensitive[self.tags_labels_mapping[label]].append(text.lower())
+            entity_label = ent.label_
+            entity_text = ent.text
+            super().add_entity_to_tags(entity_label, entity_text, tags, tags_insensitive)
 
         return tags

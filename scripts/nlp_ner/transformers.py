@@ -1,4 +1,4 @@
-from transformers import AutoTokenizer, AutoModelForTokenClassification, TokenClassificationPipeline
+from transformers import AutoTokenizer, AutoModelForTokenClassification
 from transformers import pipeline
 from transformers.pipelines import AggregationStrategy
 
@@ -25,15 +25,9 @@ class Transformers(BaseNlpNer):
         tags_insensitive = {}
 
         for entity in entities:
-            label = entity['entity_group']
-            text = entity['word']
-            if label in self.tags_labels_mapping:
-                if self.tags_labels_mapping[label] not in tags:
-                    tags[self.tags_labels_mapping[label]] = []
-                    tags_insensitive[self.tags_labels_mapping[label]] = []
-
-                if text.lower() not in tags_insensitive[self.tags_labels_mapping[label]]:
-                    tags[self.tags_labels_mapping[label]].append(text)
-                    tags_insensitive[self.tags_labels_mapping[label]].append(text.lower())
+            entity_label = entity['entity_group']
+            entity_text = entity['word']
+            #entity_score = entity.score
+            super().add_entity_to_tags(entity_label, entity_text, tags, tags_insensitive)
 
         return tags
