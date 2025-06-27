@@ -7,5 +7,5 @@ if [ ! -d "$VENV_PATH" ]; then
     exit 1
 fi
 source "$VENV_PATH/bin/activate"
-python $SCRIPT_DIR/crawler_post_process.py "$@"
+python "$SCRIPT_DIR/crawler_post_process.py" "$@"
 deactivate

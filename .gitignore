@@ -1,3 +1,4 @@
 data/
 illustrations/
 ca.crt
+scripts/nlp_ner/__pycache__/
