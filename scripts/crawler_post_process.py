@@ -57,6 +57,60 @@ def parse_date(date_string, default_date):
     # If no format matched, return None or raise an error
     return None
 
+def fix_publication_date (data):
+
+    publication_date = None
+    if "publication_date" in data and data["publication_date"]:
+        publication_date = data["publication_date"]
+    else:
+        if "last_crawled_at" in data and data["last_crawled_at"]:
+            publication_date = data["last_crawled_at"]
+
+    if publication_date:
+        date_formatted = parse_date(publication_date, "2000-01-01")
+        return date_formatted
+    else:
+        return None
+
+
+def get_before_patterns(text, patterns):
+    for p in patterns:
+        match = re.split(p, text, maxsplit=1)  # split at first number sequence
+        text = match[0].strip()
+    return text  # no pattern found
+
+def get_after_patterns(text, patterns):
+    for p in patterns:
+        match = re.split(p, text, maxsplit=1)  # split at first number sequence
+        if len(match) == 2:
+            text = match[1].strip()
+            return text
+    return None  # no pattern found
+
+
+def fix_authors(data):
+    authors = data["author"]
+    tmp = []
+    patterns = ["pour"]
+    for author in authors:
+        author_before = get_before_patterns(author, patterns)
+        if author_before and not author_before in tmp:
+            tmp.append(author_before)
+
+    authors = tmp
+    tmp = []
+    patterns = ["avec"]
+    for author in authors:
+        author_before = get_before_patterns(author, patterns)
+        if author_before and not author_before in tmp:
+            tmp.append(author_before)
+        author_after = get_after_patterns(author, patterns)
+        if author_after and not author_after in tmp:
+            tmp.append(author_after)
+
+    authors = tmp
+    return authors
+
 def write_output_files(output_list, output_directory, output_count):
     """Writes data to a JSON file."""
     if len(output_list) > 0:
@@ -67,12 +121,11 @@ def write_output_files(output_list, output_directory, output_count):
 
 
 # --- Main Processing
-def main(directory_input, items_by_output_file):
+def main(directory_input, directory_output, items_by_output_file):
     """Main function"""
 
     print(f"Starting Crawl post processing {directory_input}")
 
-    directory_output = directory_input + '/clean'
 
     # Create output directory if it doesn't exist
     if not os.path.exists(directory_output):
@@ -89,7 +142,7 @@ def main(directory_input, items_by_output_file):
 
     output_count = 0
     output_list = []
-    for filename in os.listdir(directory_input):
+    for filename in sorted(os.listdir(directory_input)):
         if filename.endswith(".json"):
             processed_count +=1
             filepath = os.path.join(directory_input, filename)
@@ -103,16 +156,8 @@ def main(directory_input, items_by_output_file):
                         processed_skipped += 1
                         continue
 
-                    publication_date = None
-                    if "publication_date" in data and data["publication_date"]:
-                        publication_date = data["publication_date"]
-                    else:
-                        if "last_crawled_at" in data and data["last_crawled_at"]:
-                            publication_date = data["last_crawled_at"]
-
-                    if publication_date:
-                        date_formatted = parse_date(publication_date, "2000-01-01")
-                        data["publication_date"] = date_formatted
+                    data["publication_date"] = fix_publication_date (data)
+                    data["author"] = fix_authors(data)
 
                     if "full_html" in data and data["full_html"]:
                         #full_html = data.pop("full_html")
@@ -134,7 +179,7 @@ def main(directory_input, items_by_output_file):
                 except json.JSONDecodeError as e:
                     print(f"Error parsing {filename}: {e}")
                 except Exception as e:
-                    print(f"Error indexing {filename}: {e}")
+                    print(f"Error processing {filename}: {e}")
 
     if len(output_list) > 0:
         write_output_files(output_list, directory_output, output_count)
@@ -144,8 +189,13 @@ def main(directory_input, items_by_output_file):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Crawler post process script.")
     parser.add_argument("-i", "--input", required=True, type=str, help="Input directory")
+    parser.add_argument("-o", "--output_directory", required=False, type=str, help="Output directory")
     args = parser.parse_args()
     directory_input = args.input
+    directory_output = args.output_directory
+
+    if not directory_output:
+        directory_output= directory_input + '/clean'
 
     ITEMS_BY_OUTPUT_FILE = 10
-    main(directory_input, ITEMS_BY_OUTPUT_FILE)
+    main(directory_input, directory_output, ITEMS_BY_OUTPUT_FILE)
