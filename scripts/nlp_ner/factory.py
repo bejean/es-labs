@@ -2,6 +2,7 @@ from .spacy import Spacy
 from .spacy_llm import SpacyLlm
 from .transformers import Transformers
 from .flair import Flair
+from .elasticsearch import Elasticsearch
 
 class NlpNerFactory:
     @staticmethod
@@ -14,4 +15,6 @@ class NlpNerFactory:
             return Transformers(kwargs["model"], kwargs["score_threshold"])
         if nlp_ner_type == "flair":
             return Flair(kwargs["model"], kwargs["score_threshold"])
+        if nlp_ner_type == "elasticsearch":
+            return Elasticsearch(kwargs["url"], kwargs["login"], kwargs["ca_cert"], kwargs["model"], kwargs["score_threshold"])
         raise ValueError("Unknown nlp ner type: " + nlp_ner_type)

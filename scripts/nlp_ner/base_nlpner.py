@@ -11,7 +11,38 @@ class BaseNlpNer(ABC):
             'LOCATION': 'LOC'
         }
 
+    def contains_alpha(self, text: str) -> bool:
+        return any(c.isalpha() for c in text)
+
     def add_entity_to_tags(self, label, text, tags, tags_insensitive):
+        text = text.strip()
+        if not text:
+            return
+
+        special_chars = [
+            "'",  # apostrophe droite (ASCII)
+            "’",  # apostrophe typographique
+            "‘",  # apostrophe ouvrante
+            "“",  # guillemet double ouvrant
+            "”",  # guillemet double fermant
+            '"',  # guillemet droit (ASCII)
+            "«",  # guillemet français ouvrant
+            "»",  # guillemet français fermant
+            "`",  # accent grave
+            "´",  # accent aigu
+            "‹",  # guillemet simple ouvrant
+            "›",  # guillemet simple fermant
+            "′",  # prime
+            "″",  # double prime
+            "-",
+        ]
+        pattern = ''.join(special_chars)
+        if text[0] in pattern or text[-1] in pattern:
+            return
+
+        if not self.contains_alpha(text):
+            return
+
         tag_key = self.tags_labels_mapping.get(label)
         if not tag_key:
             return
