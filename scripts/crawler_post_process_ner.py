@@ -3,7 +3,12 @@ import argparse
 import json
 import os
 import time
+import requests
 from nlp_ner import NlpNerFactory
+import urllib3
+
+# Supprimer les avertissements liés au SSL auto-signé
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 
 # --- Functions
@@ -24,8 +29,16 @@ def build_text(doc):
     return f"{title} {meta}".strip()
 
 
+def check_url_reachable(url: str, timeout: float = 3.0) -> bool:
+    try:
+        response = requests.head(url, timeout=timeout, verify=False)
+        return response.status_code < 500  # Accepte tout sauf erreurs serveur
+    except requests.RequestException:
+        return False
+
+
 # --- Main Processing
-def main(directory_input, ner_mode, api_key_file, ner_config_file, ner_model, score_threshold, url, login, ca_cert_file, output_csv_file, items_by_output_file):
+def main(directory_input, ner_mode, api_key_file, ner_config_file, ner_model, score_threshold, url, login, output_csv_file, items_by_output_file):
     #
     """Main function"""
 
@@ -37,15 +50,19 @@ def main(directory_input, ner_mode, api_key_file, ner_config_file, ner_model, sc
         print(f"Error: The API key file {api_key_file} was not found.")
         return
 
-    if ca_cert_file and not os.path.exists(ca_cert_file):
-        print(f"Error: The CA CRT file {ca_cert_file} was not found.")
-        return
-
     if output_csv_file:
         output_csv_file_path = os.path.dirname(output_csv_file)
         if not os.path.isdir(output_csv_file_path):
             print(f"Error: The folder for CSV file {output_csv_file_path} was not found.")
             return
+
+    if ner_mode=="elasticsearch":
+        if not url:
+            print(f"elasticsearch url not provided !")
+            exit(1)
+        if not check_url_reachable(url):
+            print(f"elasticsearch not reachable !")
+            exit(1)
 
     if api_key_file:
         try:
@@ -60,8 +77,6 @@ def main(directory_input, ner_mode, api_key_file, ner_config_file, ner_model, sc
             print(f"An error occurred: {e}")
             return
 
-    print(f"Starting Crawl post processing {directory_input}")
-
     if not output_csv_file:
         directory_output = directory_input + '/ner'
 
@@ -75,6 +90,8 @@ def main(directory_input, ner_mode, api_key_file, ner_config_file, ner_model, sc
 
     else:
         csv_rows = {}
+
+    print(f"Starting Crawl post processing {directory_input}")
 
     # === Process files
     processed_file_count = 0
@@ -91,9 +108,10 @@ def main(directory_input, ner_mode, api_key_file, ner_config_file, ner_model, sc
         case 'flair':
             nlp = NlpNerFactory.build("flair", model=ner_model, score_threshold=score_threshold)
         case 'elasticsearch':
-            nlp = NlpNerFactory.build("elasticsearch", model=ner_model, score_threshold=score_threshold, url=url, login=login, ca_cert=ca_cert_file)
+            nlp = NlpNerFactory.build("elasticsearch", model=ner_model, score_threshold=score_threshold, url=url, login=login)
         case _:
             print("Invalid NER mode")
+            print("Use --help to see available options.")
             return
 
     output_count = 0
@@ -174,18 +192,35 @@ if __name__ == "__main__":
 
     start_time = time.time()
 
-    parser = argparse.ArgumentParser(description="Crawler post process script.")
+    parser = argparse.ArgumentParser(
+        description="Crawler post-process script for NER enrichment.\n\n"
+                    "Example:\n"
+                    "  python crawler_post_process_ner.py --input ./data --mode elasticsearch --model mymodel --url https://localhost:9200 --login user:pass",
+        formatter_class=argparse.RawTextHelpFormatter
+    )
     parser.add_argument("--input", required=True, type=str, help="Input directory")
-    parser.add_argument("--mode", required=True, type=str, help="Mode")
-    parser.add_argument("--api_key_file", required=False, type=str, help="API Key")
-    parser.add_argument("--config_file", required=False, type=str, help="Configuration file")
-    parser.add_argument("--model", required=False, type=str, help="Model name")
-    parser.add_argument("--score_threshold", required=False, type=str, help="Entity score threshold : 0.00 (default) to 1.00")
-    parser.add_argument("--output_csv_file", required=False, type=str, help="Output CSV file")
-    parser.add_argument("--url", required=False, type=str, help="API Url")
-    parser.add_argument("--login", required=False, type=str, help="API Login")
-    parser.add_argument("--ca_cert", required=False, type=str, help="API CA Certificate")
+    parser.add_argument("--mode", required=True, type=str,
+                        choices=["spacy", "spacy_llm", "transformers", "flair", "elasticsearch"],
+                        help="NER mode to use")
+    parser.add_argument("--api_key_file", required=False, type=str, help="API Key file path (for spacy_llm, if needed)")
+    parser.add_argument("--config_file", required=False, type=str, help="LLM config file (for spacy_llm)")
+    parser.add_argument("--model", required=False, type=str, help="Model name to use")
+    parser.add_argument("--score_threshold", required=False, default=0.0, type=str, help="Entity score threshold: 0.00 to 1.00")
+    parser.add_argument("--output_csv_file", required=False, type=str, help="Output CSV file path")
+    parser.add_argument("--url", required=False, default="http://localhost:9200", type=str, help="Elasticsearch API base URL (for instance http://localhost:9200)")
+    parser.add_argument("--login", required=False, default="elastic:elastic", type=str, help="Elasticsearch credentials (for instance elastic:xxxxxx")
+
     args = parser.parse_args()
+
+    if args.mode == "spacy_llm":
+        if not args.config_file:
+            parser.error("--config_file is required when --mode is 'spacy_llm'")
+        if not args.api_key_file:
+            parser.error("--api_key_file is required when --mode is 'spacy_llm'")
+
+    if args.mode in {"spacy", "transformers", "flair", "elasticsearch"} and not args.model:
+        parser.error(f"--model is required when --mode is '{args.mode}'")
+
     directory_input = args.input
     ner_mode = args.mode
     api_key_file = args.api_key_file
@@ -195,10 +230,9 @@ if __name__ == "__main__":
     output_csv_file = args.output_csv_file
     url = args.url
     login = args.login
-    ca_cert = args.ca_cert
 
     ITEMS_BY_OUTPUT_FILE = 10
-    main(directory_input, ner_mode, api_key_file, ner_config_file, ner_model, score_threshold, url, login, ca_cert, output_csv_file, ITEMS_BY_OUTPUT_FILE)
+    main(directory_input, ner_mode, api_key_file, ner_config_file, ner_model, score_threshold, url, login, output_csv_file, ITEMS_BY_OUTPUT_FILE)
 
     end_time = time.time()
     duration = end_time - start_time

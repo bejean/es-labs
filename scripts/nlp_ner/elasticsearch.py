@@ -4,11 +4,10 @@ from requests.auth import HTTPBasicAuth
 from .base_nlpner import BaseNlpNer
 
 class Elasticsearch(BaseNlpNer):
-    def __init__(self, es_url, login, ca_cert, model, score_threshold):
+    def __init__(self, es_url, login, model, score_threshold):
         super().__init__()
         self.es_url = es_url
         self.login = login
-        self.ca_cert = ca_cert
         self.model=model
         if score_threshold is None:
             self.score_threshold = 0.0
@@ -44,13 +43,8 @@ class Elasticsearch(BaseNlpNer):
             username, password = self.login.split(":", 1)
             request_args["auth"] = HTTPBasicAuth(username, password)
 
-        if url.startswith("https://") and self.ca_cert:
-            request_args["verify"] = self.ca_cert
-        elif url.startswith("https://"):
-            request_args["verify"] = True
-
         try:
-            response = requests.post(**request_args)
+            response = requests.post(**request_args, verify=False)
             tags = {}
             tags_insensitive = {}
 

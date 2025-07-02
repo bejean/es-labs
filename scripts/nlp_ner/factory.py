@@ -16,5 +16,5 @@ class NlpNerFactory:
         if nlp_ner_type == "flair":
             return Flair(kwargs["model"], kwargs["score_threshold"])
         if nlp_ner_type == "elasticsearch":
-            return Elasticsearch(kwargs["url"], kwargs["login"], kwargs["ca_cert"], kwargs["model"], kwargs["score_threshold"])
+            return Elasticsearch(kwargs["url"], kwargs["login"], kwargs["model"], kwargs["score_threshold"])
         raise ValueError("Unknown nlp ner type: " + nlp_ner_type)
