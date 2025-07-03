@@ -2,3 +2,9 @@ data/
 illustrations/
 ca.crt
 scripts/nlp_ner/__pycache__/
+
+scripts/local-cached/
+
+elastic-start-local/
+
+local-cached/
