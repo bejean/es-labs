@@ -149,6 +149,10 @@ def main(directory_input, ner_mode, api_key_file, ner_config_file, ner_model, sc
                                         else:
                                             csv_rows[k]=csv_rows[k]+1
                             else:
+                                for tag in tags:
+                                    entities = tags.get(tag)
+                                    file_entities_count += len(entities)
+
                                 doc["tags"] = tags
                                 output_list.append(doc)
 
@@ -210,7 +214,9 @@ if __name__ == "__main__":
     parser.add_argument("--url", required=False, default="http://localhost:9200", type=str, help="Elasticsearch API base URL (for instance http://localhost:9200)")
     parser.add_argument("--login", required=False, default="elastic:elastic", type=str, help="Elasticsearch credentials (for instance elastic:xxxxxx")
 
-    args = parser.parse_args()
+    args, unknown = parser.parse_known_args()
+    #args, unknown = parser.parse_known_args(['--swallow', 'gouda', 'african'])
+    #args = parser.parse_args()
 
     if args.mode == "spacy_llm":
         if not args.config_file:
