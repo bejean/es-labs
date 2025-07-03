@@ -1,0 +1,1076 @@
+label,text,count
+ORG,DS Automobiles,5
+ORG,HMD,5
+PER,Adrian Dittmann,6
+PER,Ethan,3
+ORG,Bumble,3
+PER,Amixem,5
+PER,Ariane,3
+ORG,Disney,6
+ORG,Clone Robotics,4
+PER,Charles Bocquillon,5
+PER,Gabrielle Chanel,5
+PER,Luis von Ahn,5
+ORG,CrowdStrike,4
+PER,Hiroshi Lockheimer,6
+ORG,d’Amazon,4
+PER,Perrikaryal,6
+ORG,Total,6
+ORG,Cosmos,3
+LOC,Danemark,6
+ORG,Alef Aeronautics,5
+PER,Stéphane Audrand,6
+LOC,Twitch,3
+ORG,Arianespace,5
+ORG,LinkedIn,6
+PER,Mounir Mahjoubi,6
+PER,Geoffrey Hinton,6
+ORG,Rockstar Games,6
+ORG,EA Sports FC,4
+PER,Barack Obama,6
+ORG,Discord,5
+PER,Pavel Durov,6
+PER,Cosmo,4
+ORG,Apple Store,5
+PER,Siri,5
+ORG,FAA,6
+PER,Nicolas Vignolles,6
+ORG,Boston Dynamics,5
+LOC,Nord,3
+ORG,Mac,3
+PER,Zelensky,6
+PER,Gisèle Pelicot,5
+ORG,PlayStation,3
+ORG,Toshiba,6
+ORG,Wifi,3
+ORG,Europol,4
+PER,Pierre Niney,6
+PER,Altman,6
+PER,Ocarina,3
+ORG,s,3
+ORG,The Family,5
+LOC,Cupertino,6
+PER,Redmond,3
+ORG,Google Maps,3
+ORG,Google Ireland Limited,5
+LOC,Canada,6
+LOC,Ukraine,6
+ORG,Apple Intelligence,6
+PER,Bosch,4
+ORG,Nanoleaf,4
+PER,Enki,4
+ORG,D,3
+PER,Bose,4
+PER,Waluigi,3
+ORG,Lenovo,5
+PER,Marwan Ouarab,6
+ORG,App Store,4
+ORG,EcoFlow,3
+ORG,Intel,6
+ORG,Asus,6
+PER,Heil Hitler,3
+PER,Yann LeCun,6
+ORG,FBI,6
+PER,Gemini,4
+PER,Raphaël Gaillard,6
+PER,Jourdan Louise,6
+PER,Steve Jobs,6
+ORG,Samsung Mobile,6
+PER,Georges,3
+ORG,Apple Music Voice,3
+ORG,Public Sénat,4
+PER,Musk,6
+PER,Covid,4
+PER,Natalie Reynolds,6
+LOC,Fortnite,4
+ORG,BlueSky,5
+ORG,Union Européenne,4
+ORG,Greenpeace,5
+PER,Suni Williams,6
+ORG,Apple Music,6
+ORG,Poly,3
+ORG,Bose,5
+ORG,ESA,5
+ORG,JBL,6
+LOC,Mars,6
+ORG,SkyDrive,3
+PER,Nadella,4
+PER,Ochy,3
+PER,Jack Dorsey,6
+ORG,Peugeot,6
+ORG,LG Uplus,3
+ORG,Thales,5
+ORG,Nest,4
+PER,Billie Eilish,4
+ORG,Hamas,3
+ORG,Gemini,3
+PER,Chloé Gervais,6
+ORG,AfD,5
+PER,Anthony Bourbon,6
+ORG,Red Hat,5
+ORG,Blue Origin,6
+ORG,Sennheiser,5
+LOC,Pologne,6
+ORG,Jolifish,4
+PER,Tinder,3
+ORG,Musk,4
+PER,Josselin Bordat,6
+ORG,Team Asobi,4
+ORG,Instagram,5
+PER,Seiji Godo,6
+LOC,Jupiter,6
+PER,Marshall,4
+LOC,Metz,5
+ORG,NVIDIA,6
+ORG,Gafam,3
+PER,Stéphanie de Vanssay,6
+LOC,Hong Kong,6
+PER,Paul Allen,6
+PER,Mathieu Letombe,6
+PER,Baptiste Robert,6
+PER,Anaïs Libolt,6
+ORG,Samsung France,3
+LOC,Texas,6
+ORG,Xbox Network,3
+PER,Blagodariov,5
+PER,Mario Kart,3
+LOC,Tasmanie,5
+ORG,RomUniverse,3
+ORG,Amazon,6
+ORG,HelloQuitteX,5
+PER,Miley Cyrus,6
+ORG,Samsung Lane,3
+PER,George Lucas,5
+ORG,Streamers Awards,3
+PER,Nolan,5
+ORG,EA,6
+ORG,Marshall,4
+ORG,Yale,4
+ORG,Humane,4
+PER,Donald Trump,6
+ORG,TNT,3
+ORG,Electronic Arts,5
+PER,Laura,5
+ORG,Ubisoft,6
+ORG,Nest Audio,4
+ORG,Fortnite,3
+PER,Tobi Lütke,6
+PER,Bill Gates,6
+PER,Noël,3
+ORG,Big Tech,3
+PER,Nicolas,3
+ORG,Autodesk,5
+ORG,Store,4
+ORG,Messenger,3
+PER,Sam Altman,6
+ORG,TVA,3
+ORG,Rockstar,5
+PER,Sunita Williams,5
+ORG,Activision,6
+PER,Meredith Whittaker,6
+ORG,YouTube,4
+ORG,Minecraft,3
+PER,Kylian Mbappé,6
+PER,Laurent Glaser,5
+ORG,GreenTech,4
+PER,Leroy Merlin,4
+PER,Grok,4
+LOC,Cologne,6
+PER,Neo,3
+PER,Lady Gaga,6
+PER,Pikachu,3
+LOC,Montpellier,6
+ORG,Cloud,3
+ORG,Alphabet Inc,5
+ORG,Zynga,5
+LOC,Hefei,5
+ORG,AirPower,3
+PER,Bob,5
+ORG,SpaceX,6
+ORG,Starliner,3
+ORG,Nvidia,6
+ORG,Ouest France,3
+ORG,AMD,6
+PER,Einstein,3
+PER,Nicolas Cottard,6
+ORG,Echo,3
+ORG,Facebook,5
+LOC,Paris,6
+PER,Fort Felker,5
+LOC,Maghreb,6
+ORG,IRM,3
+PER,Ray Ban,3
+ORG,Artemis,3
+ORG,TAC,3
+ORG,Microsoft,6
+ORG,Netflix,5
+ORG,UE,4
+ORG,CNRS,6
+ORG,SAR,4
+PER,Marianne,6
+ORG,Tribel,3
+ORG,GTA,4
+ORG,RSF,6
+PER,George Floyd,6
+ORG,Microsoft Teams,3
+ORG,PUBG Mobile,4
+ORG,BBC,6
+LOC,Guyane,6
+PER,Giulia Sarkozy,6
+ORG,X,6
+PER,Ursula van der Leyen,6
+PER,Aurélie Jean,6
+ORG,LG Electronics,6
+ORG,NFC,3
+PER,Grégory Veret,6
+PER,James Cameron,6
+PER,Greta Thunberg,5
+ORG,Anonymous,5
+ORG,Dell,6
+ORG,AI,4
+ORG,Double Helix Games,4
+ORG,Honor,4
+ORG,Gamescom,6
+PER,Nina Jane Patel,5
+ORG,Unesco,3
+ORG,Spectrum,3
+ORG,MGM Studios,5
+PER,Biden,6
+ORG,Dolby,5
+ORG,Capté,4
+ORG,Apple,6
+PER,Zora,3
+ORG,Bosch eBike Systems,5
+ORG,ABS,3
+PER,Kaspersky,4
+LOC,Nice,6
+ORG,Telegram,5
+PER,Jeff Bezos,6
+ORG,Segway,4
+ORG,FDJ,6
+PER,Craig Federighi,6
+ORG,Philips,6
+ORG,CES,4
+PER,Zuckerberg,6
+ORG,Microsoft Store,3
+ORG,l,3
+ORG,HTC,6
+ORG,Edge,3
+ORG,MediaTek,6
+ORG,Sharp,6
+ORG,Paris Audio Vidéo Show,3
+ORG,Metallica,6
+LOC,Notre-Dame,5
+PER,Tesla,4
+ORG,PC,4
+ORG,Sotheby’s,3
+PER,Jensen Huang,6
+ORG,Flipper Zero,3
+ORG,IBM,6
+PER,Phil Spencer,6
+ORG,Xooloo,3
+ORG,ZTE,5
+PER,Olivier Gaillard,6
+PER,Suno,4
+LOC,Times Square,6
+PER,Luigi,4
+ORG,Chrome,4
+LOC,Barcelone,6
+ORG,EyeLights,5
+ORG,Threads,3
+ORG,GAFAM,5
+ORG,Blizzard,6
+ORG,Starlink,3
+ORG,PDG,3
+PER,Vincent Cassel,6
+ORG,Unicode,3
+PER,Sarah Friar,5
+ORG,Tesla,5
+ORG,TCL,4
+ORG,JO,3
+ORG,BCKL,3
+ORG,Project Zero,4
+ORG,TikTok,6
+ORG,Google Chrome,3
+PER,Eva Evans,6
+LOC,Mountain View,4
+ORG,ISS,3
+PER,Lionel Paris,6
+PER,Patrick Perrot,4
+PER,Arthur Mensch,5
+ORG,True Wireless,3
+ORG,Nikon,6
+ORG,The Anonymous Project,3
+ORG,Leboncoin,4
+ORG,Motorola,6
+ORG,Prime Video,5
+PER,Francisco Ribeiro,6
+ORG,Amazon Music,6
+PER,Avidsen,4
+PER,Lucie Chat,3
+ORG,Air,3
+PER,Johnatan Uzan,6
+PER,Severin Hacker,6
+LOC,Mercure,6
+ORG,Leica,6
+PER,Minttt,4
+ORG,Fujifilm,6
+ORG,M&Wine,3
+PER,Inoxtag,5
+PER,Clara Chappaz,6
+ORG,Handi Exceller,3
+PER,Pokimane,4
+ORG,TomTom,4
+LOC,Essonne,6
+ORG,Electrolux,6
+ORG,Bosch,4
+LOC,Las Vegas,6
+PER,Andreas Mogensen,6
+ORG,Directrice Europe Broadcast & Content,4
+PER,Oppo,3
+PER,King,3
+ORG,Atari,6
+ORG,Google Play Store,3
+LOC,Wall Street,5
+LOC,Saint-Martin,5
+ORG,Activision Blizzard,6
+ORG,France Digitale,4
+ORG,Android,3
+ORG,VivaTech,5
+PER,Scarlett Johansson,6
+ORG,General Motors,6
+ORG,Cofrade,4
+ORG,DJI,4
+PER,Joséphine Baker,6
+PER,Nicolas Sarkozy,6
+PER,Charles Martinet,5
+PER,Vercelli,3
+LOC,Venezuela,6
+PER,Hitler,5
+ORG,Fairphone,5
+ORG,Yamaha,6
+PER,Hanna,5
+ORG,Twitter,4
+PER,Sune Lehmann,6
+ORG,Oppo,5
+LOC,Japon,6
+PER,Yasuke,4
+ORG,ZEvent,3
+ORG,Intellivision,4
+ORG,OnePlus,5
+ORG,LG Wing,3
+ORG,Cimade,4
+ORG,NFT,5
+PER,Thierry Breton,6
+ORG,Apple Watch,4
+PER,Trump,6
+ORG,Firefly Aerospace,6
+ORG,ADN,3
+PER,Sandra Auboy,6
+PER,Eric Bothorel,6
+ORG,iPhone,3
+PER,Valorant,3
+ORG,Depeche Mode,4
+ORG,Spotify,5
+ORG,Boeing,6
+ORG,Solar Brother,4
+LOC,Istanbul,4
+LOC,Corée du Sud,6
+PER,Remus,6
+PER,Yubo,3
+PER,François,5
+ORG,Valco,3
+ORG,Narcotiques Anonymes,3
+ORG,Noyb,5
+PER,Hoover,4
+ORG,Hotmail,3
+ORG,xAI,5
+PER,Zelda,3
+ORG,Logitech,5
+PER,Kristen Stewart,6
+ORG,Audio Technica,5
+PER,Olivier Alexandre,6
+PER,Captain Marvel,3
+PER,Gates,5
+PER,Sundar Pichai,6
+PER,Alexa,4
+PER,Gregg Mayles,6
+ORG,Mastodon,4
+PER,Gros,3
+LOC,Sydney,6
+ORG,JVC,3
+ORG,Brain Magazine,3
+ORG,Play Store,4
+ORG,Digital Realty,5
+PER,Andy Ho,6
+ORG,DMA,4
+PER,David Balto,5
+ORG,Hoover,4
+PER,Sonos,4
+PER,Adam Mosseri,6
+ORG,Shopify,4
+PER,Balenciaga,3
+LOC,Nantes,5
+LOC,Los Angeles,6
+ORG,IFA de Berlin,3
+PER,Macron,5
+PER,MrBeast,6
+ORG,Niantic,6
+ORG,GénérationLibre,5
+ORG,KCorp,4
+LOC,Porte de Versailles,6
+ORG,Snapchat,5
+PER,Brad Pitt,6
+PER,Michel Sadelain,6
+PER,Tommy Tallarico,6
+PER,Arthur Delaporte,6
+ORG,Isar Aerospace,5
+ORG,Cultura,4
+ORG,RGPD,3
+ORG,WhatsApp,6
+ORG,Orange,6
+PER,Chantal Thomass,5
+PER,Ines de la Fressange,4
+ORG,ExxonMobil,6
+PER,Emmanuel Macron,6
+ORG,Beem Energy,4
+ORG,Bouygues Telecom,6
+ORG,PayPal,5
+PER,AD Laurent,5
+PER,Flappy Bird,3
+LOC,Duolingo,3
+ORG,WWDC,3
+ORG,Netatmo,3
+PER,Van Gogh,6
+ORG,Riot Games France,6
+ORG,Playstation,3
+PER,Joe Kreiner,6
+LOC,Berlin,6
+PER,Céline,6
+PER,Ronan Allain,6
+ORG,Vivoka,5
+PER,Sonny,5
+PER,Tikino,4
+ORG,Google Street,3
+PER,Spot,3
+PER,Cortana,4
+ORG,Apple News,4
+ORG,CNIL,6
+LOC,Everest,4
+PER,Jules Fougère,4
+ORG,Dyson,5
+PER,Missy Elliott,6
+PER,Ray,5
+PER,Nasdas,5
+PER,Marie Curie,6
+PER,Andrew Chin,6
+PER,Jérôme Lefranc,6
+PER,Boulanger,3
+PER,Oussama Ammar,6
+LOC,Grande-Bretagne,5
+ORG,Viva Technology,5
+PER,Mario,5
+ORG,Sega,6
+PER,Domingo,6
+ORG,Reddit,3
+ORG,Doc FX,3
+PER,Frances Haugen,6
+PER,Simpson,3
+PER,Disney,3
+ORG,Nextdoor,4
+PER,Annie Altman,6
+ORG,Gamestop,4
+PER,Kevin Mitnick,6
+PER,Kenza Waldorf,5
+PER,Roborock,4
+PER,Anne,5
+PER,Carrie Bradshaw,5
+PER,Samantha Kerr,6
+PER,Lena,3
+ORG,Salon de la Photo,3
+ORG,Self Service Repair Store,4
+ORG,Back Market,4
+PER,Ming Chi Kuo,6
+ORG,Sony,6
+LOC,Suisse,6
+ORG,Amazon Web Services,5
+ORG,Polaroid,5
+PER,Boris Johnson,6
+ORG,ONG,3
+ORG,Xiaomi,6
+PER,Fabrice Goffin,5
+PER,Wario,3
+PER,Asma Mhalla,6
+ORG,BTP,3
+ORG,Panasonic,6
+ORG,Lunar Reconnaissance Orbiter,3
+ORG,Gafa,4
+ORG,Teams,3
+LOC,Guangzhou,6
+ORG,HackBoss,3
+PER,Emily,3
+ORG,SORA,3
+ORG,Epson,3
+ORG,L,3
+PER,Simone Veil,6
+PER,Gerald Lawson,6
+ORG,Huawei,6
+PER,Romain Badouard,6
+PER,Iki,4
+ORG,État,3
+ORG,Atmos Gear,4
+PER,Ophenya,4
+ORG,CyberTek,6
+ORG,Mercedes,5
+PER,Bluesky,3
+ORG,xCloud,3
+PER,Pauline Ferrari,6
+ORG,DESI,3
+ORG,ChatGPT,5
+ORG,Commission,4
+ORG,Braun,3
+ORG,Alphabet,5
+ORG,Internet,4
+ORG,OMS,4
+ORG,Beats Audio,4
+PER,Miho Janvier,6
+LOC,Terre,6
+ORG,IA,3
+ORG,Google Workspace,4
+LOC,New-York,4
+ORG,Femtocell,3
+ORG,Le Pommier,3
+ORG,Studio Harcourt,3
+LOC,Silicon Valley,6
+ORG,Unsa,4
+PER,Allen,5
+ORG,Skype,3
+ORG,Kobo,5
+PER,Parkinson,4
+PER,Cyril Schreiner,5
+ORG,NordVPN,4
+PER,Cosmo Wright,6
+PER,Laure Cogen,5
+ORG,Lidl,5
+ORG,Epic Games,6
+PER,Tommy Deblieck,5
+ORG,Space X,4
+ORG,NimzaLoader,3
+LOC,Lune,6
+ORG,DSA,6
+ORG,JO de Paris,3
+ORG,PlayStation London,3
+ORG,FIFA,6
+ORG,Libertarien,3
+ORG,MacBook Air,3
+ORG,LED,3
+PER,Gaspard Koenig,6
+ORG,Xbox,4
+ORG,Lime,4
+PER,Butch Wilmore,6
+ORG,L’Armée,3
+ORG,Windows,3
+ORG,Firefox,3
+ORG,Dangbei,3
+LOC,Angeac-Charente,3
+PER,Julien Mayeux,6
+ORG,Minttt,3
+PER,Meta,4
+ORG,Inoxtag,6
+PER,Anne Bouverot,6
+PER,David Chavalarias,6
+ORG,TikTok Shop,5
+LOC,Nancy,6
+PER,François Hernandez,6
+ORG,Décathlon,3
+ORG,Samsung,6
+PER,Marc Zuckerberg,6
+PER,Amine,5
+ORG,Maison,3
+PER,Jeanne d’Arc,5
+PER,Tim Wu,4
+PER,Steve Ballmer,6
+PER,Alexandre Zapolsky,6
+PER,Khaleesi,6
+LOC,Orange,4
+ORG,Meta,6
+PER,John Kerry,6
+ORG,Plex,5
+ORG,Cloudfare,3
+LOC,Far West,3
+PER,Xavier Niel,6
+ORG,Samsung Galaxy,4
+LOC,New York,6
+LOC,Reddit Place,3
+ORG,Pew Research Center,6
+PER,Romulus,6
+ORG,Truth Social,3
+PER,Heman Bekele,5
+PER,Fortnite,5
+PER,Jim Ryan,6
+PER,Satya Nadella,6
+PER,Wayfe,3
+LOC,France,6
+LOC,Miami,6
+PER,Thom Gruhler,6
+ORG,Kick,4
+ORG,Dolby Laboratories,6
+ORG,BeamO,3
+PER,Elon Musk,6
+PER,Chungin Lee,6
+ORG,AMD Ryzen,3
+PER,Emmaüs,3
+ORG,BpiFrance,5
+ORG,OpenAI,5
+ORG,Incognito Market,4
+ORG,Ademe,5
+ORG,Gmail,3
+PER,Kanye West,5
+LOC,Saint-Malo,5
+ORG,Meta AI,3
+PER,Loïc Duval,6
+ORG,Winora,4
+LOC,Australie,6
+PER,Valérie Piau,6
+ORG,Epic,4
+ORG,Elon Musk,3
+ORG,OneDrive,3
+PER,Florent Roulier,6
+PER,Tim Cook,6
+ORG,IFA,6
+ORG,Google,6
+PER,Jamel Debbouze,6
+ORG,Google Assistant,3
+PER,Negan,4
+ORG,Killnet,5
+ORG,EA Sports,6
+PER,James Webb,3
+ORG,Rolling Stone,5
+ORG,API,3
+ORG,Banque d’Angleterre,3
+ORG,Alexa,6
+ORG,Nokia,6
+ORG,La Poste Mobile,4
+ORG,L’Oréal,4
+PER,Mark Zuckerberg,6
+LOC,Europe,6
+PER,Aurélie Fircowicz,6
+PER,Jean Paul Gaultier,5
+ORG,Nintendo,6
+ORG,SNCF,5
+ORG,Sonos,5
+ORG,Fondation Descartes,5
+LOC,Stonehenge,5
+LOC,Allemagne,6
+PER,Ballmer,4
+ORG,Lundi,3
+ORG,Symfonisk,3
+ORG,Gifam,5
+ORG,E3,3
+ORG,Macron,3
+ORG,MrBeast,4
+LOC,Kyoto,6
+PER,Joe Biden,6
+ORG,Commerce,4
+ORG,Mozilla,4
+PER,X,3
+ORG,Canon,4
+LOC,Abou Dhabi,6
+ORG,CertiDeal,5
+ORG,Mistral AI,5
+ORG,DTU,3
+LOC,Grand Palais,6
+ORG,Nasa,6
+ORG,Manticore Games,6
+ORG,Féministes,3
+PER,Jay Z,5
+PER,Kléber Arhoul,6
+PER,Christophe Lafaye,6
+PER,John McFall,6
+ORG,Dolby Atmos,5
+PER,Nicolas Doucet,5
+ORG,de Barcelone,3
+PER,Claude,5
+ORG,Studio Ghibli,4
+ORG,LG,6
+ORG,DeepSeek,4
+LOC,Orsay,3
+ORG,SFR,6
+LOC,Alsace,3
+ORG,BlackBerry,5
+PER,Indiana Jones,5
+PER,Sylvain Chiron,4
+PER,Aurore Bergé,5
+ORG,Anthropic,4
+PER,Whitney Wolfe Herd,5
+ORG,ByteDance,3
+PER,Laurène Lévy,4
+LOC,Asie,3
+PER,Pluton,3
+ORG,Fitbit,3
+ORG,Viamedis,3
+PER,TM Roh,4
+PER,Free,3
+LOC,Afrique du Sud,5
+PER,Jony Ive,5
+ORG,Riot France,4
+ORG,Qwant,4
+ORG,Free,3
+PER,Willen,3
+ORG,Muse,5
+ORG,Time,4
+LOC,Irlande,5
+PER,Baghera Jones,5
+PER,Tibo InShape,5
+ORG,Waze,4
+ORG,Tinder,3
+LOC,Égypte,3
+ORG,La Vanguardia,3
+PER,Michou,4
+PER,PewDiePie,3
+LOC,Himalaya,3
+LOC,Singapour,5
+PER,Louise,4
+LOC,Mongolie,4
+ORG,Intuitive Machines,5
+ORG,Showroomprivé,4
+LOC,Brésil,5
+LOC,Afrique,5
+PER,Clinton,4
+PER,Floyd,3
+ORG,Indexia,3
+ORG,Carrefour,4
+PER,Samouraïs,3
+LOC,Espace,3
+PER,Meissner,5
+PER,Aya Nakamoura,4
+ORG,Team Vitality,4
+LOC,Place de la Paix,4
+PER,Élise Lucet,5
+ORG,Midjourney,3
+ORG,BlueTwelve,4
+PER,Rachel True,4
+LOC,Fisc,3
+ORG,Ipsos,4
+LOC,Champs Elysées,4
+ORG,Chat GPT,3
+LOC,Israël,5
+ORG,Ikea,5
+ORG,Gucci,4
+LOC,Turquie,5
+PER,Lio,5
+ORG,Signal,4
+PER,Murfy,3
+ORG,Clubhouse,3
+PER,Satoshi Nakamoto,4
+LOC,Amérique,3
+ORG,Cerfia,3
+LOC,Soleil,4
+LOC,Stade de France,5
+PER,Galansire,3
+ORG,Uswitch,4
+PER,Guava Shuishui,5
+ORG,Cnil,4
+ORG,RT,4
+PER,Lucie,4
+LOC,Elyze,3
+PER,Sophie Adeno,5
+ORG,Bing,3
+ORG,Sprint,5
+ORG,Sputnik,4
+PER,Terraillon,4
+ORG,Slack,3
+LOC,Mémorial de Caen,4
+LOC,Etats,4
+ORG,Next Mobiles,5
+PER,Mickael Dell’ova,5
+LOC,Norvège,5
+PER,Emilie,4
+ORG,Booking,4
+LOC,Android,3
+LOC,Amérique du Sud,5
+LOC,Argentine,5
+ORG,Vivatech,4
+LOC,Covid,3
+ORG,Rare,5
+LOC,Chine,5
+PER,Etoiles,3
+ORG,Elyze,3
+LOC,Russie,5
+ORG,Qualcomm,4
+PER,Zerator,3
+PER,Furax,3
+ORG,eBay,4
+PER,Mastu,5
+PER,Squeezie,5
+ORG,Colossal Biosciences,5
+PER,Twitch,3
+PER,Bezos,3
+LOC,Albuquerque,5
+ORG,Calex,3
+ORG,Mediatonic,4
+ORG,Babyliss,4
+LOC,Jérusalem,5
+ORG,Orosound,3
+PER,Jésus,5
+LOC,Antarctique,5
+ORG,Crowdstrike,3
+ORG,Riot Games,5
+ORG,Paradromics,3
+ORG,Focal,4
+LOC,Espagne,5
+ORG,REvil,3
+ORG,Triangle,3
+LOC,Charon,5
+PER,Emberton,4
+ORG,Proscenic,3
+ORG,Sony Mobile,4
+ORG,Shure,3
+ORG,Tidal,3
+PER,Ye,3
+LOC,Olympia,3
+ORG,Urban Cuisine,3
+PER,Rovio,3
+ORG,Dagens Nyheter,3
+PER,Daan Tech,3
+ORG,Valve,4
+ORG,Snap,4
+ORG,OLED,3
+LOC,La Chine,4
+ORG,Sénat,3
+LOC,Algérie,4
+PER,Dyson,3
+LOC,Bennu,3
+PER,Jabra,3
+PER,Mammouth,3
+PER,Duo,3
+PER,DeepSeek,3
+LOC,Pompéi,5
+PER,Najat Vallaud-Belkacem,5
+PER,Gamel Helmets,4
+ORG,GrosBill,4
+ORG,Arcom,3
+LOC,Pluton,5
+LOC,TikTok,3
+ORG,The Verge,3
+ORG,Goldin Auctions,5
+PER,Kratos,3
+LOC,Vélo,3
+ORG,Nubia,3
+ORG,Teebike,3
+ORG,Royole,4
+ORG,Sud Ouest,3
+ORG,iRobot,3
+ORG,The Conversation,3
+ORG,Black Lives Matter,4
+ORG,SPA,4
+ORG,Kaspersky,4
+ORG,Bethesda,4
+PER,Braun,3
+ORG,Baidu,4
+PER,Stem,3
+PER,Sneha Revanur,5
+ORG,Konami,5
+ORG,URSS,4
+LOC,Londres,5
+LOC,Etat,3
+PER,Nanoleaf,3
+PER,Dyad de Roborock,3
+LOC,Italie,5
+PER,Abrègefrère,4
+PER,Wilkinson,4
+LOC,Birmanie,5
+ORG,Withings,4
+PER,Nick Szabo,5
+PER,Squikit,3
+ORG,Bouygues,5
+PER,Hella,5
+ORG,Crew-10,3
+ORG,Netgear,3
+LOC,Xinjiang,5
+ORG,Parlement,5
+ORG,Save,3
+PER,Rémi Hontang,5
+ORG,Twitch,3
+ORG,Union européenne,3
+ORG,Agence spatiale européenne,3
+LOC,Mexique,5
+LOC,Marseille,5
+LOC,Niantic,3
+ORG,Vivo,3
+ORG,Encode Justice,4
+ORG,Neoplants,3
+PER,Kick,3
+ORG,Parlement européen,4
+ORG,Sony Interactive Entertainment,5
+ORG,The Guardian,4
+ORG,Invoxia,4
+ORG,Bandai,5
+LOC,Sénat,4
+ORG,Makani,3
+ORG,Atmos,3
+ORG,Cupertino,3
+ORG,Tencent,4
+PER,Deadpool,4
+PER,Atreus,3
+ORG,Uber,4
+ORG,XGIMI,3
+LOC,Musée d'Orsay,5
+PER,Guava Beauty,4
+LOC,Io,5
+ORG,Niji,5
+ORG,Guardian,3
+PER,Kobold,3
+ORG,Hestiia,3
+ORG,Commission européenne,5
+ORG,Kaspersky France,3
+LOC,Vénus,5
+ORG,NoPlace,4
+ORG,ChapGPT,3
+ORG,Quanta,4
+ORG,CAPTCHA,3
+PER,Mr Beast,3
+LOC,État,3
+PER,Cédric O. Cédric O,4
+PER,Jota Pov,4
+PER,Furbo,3
+ORG,Jabra,4
+LOC,Californie,5
+LOC,Champs-Elysées,4
+LOC,Bezons,5
+PER,Toussaint Wattinne,5
+PER,J.D Vance,4
+ORG,Linagora,3
+ORG,Boulanger,3
+ORG,Take-Two,3
+LOC,Nîmes,4
+LOC,Hauts-de-France,4
+LOC,Pays-Bas,4
+LOC,Grand Rex,3
+LOC,Loiret,4
+ORG,Médecins du monde,4
+ORG,Biogents,3
+LOC,Arabie saoudite,4
+ORG,Coyote,3
+PER,Niel,4
+ORG,Fnac Darty,4
+PER,Jean-Marie Le Pen,4
+ORG,Pro,3
+PER,Jean-Noël Barrot,4
+LOC,États-Unis,4
+LOC,Moscou,4
+ORG,Micromania-Zing,3
+PER,Marie-Laure Denis,4
+ORG,Activision-Blizzard,4
+ORG,Conseil d’État,4
+LOC,Seine-Maritime,3
+ORG,Mattel,3
+PER,Cerfia,3
+ORG,Gendarmerie nationale,4
+ORG,Booking.com,3
+LOC,Amérique du nord,3
+ORG,Mastrad,3
+LOC,Inde,4
+LOC,Milan,4
+LOC,Marseillaises,4
+ORG,TF1,4
+LOC,Maison-Blanche,4
+LOC,Redmond,3
+PER,Arnault,4
+ORG,Sure Petcare,3
+PER,Hawk Tuah Girl,3
+ORG,Cdiscount,3
+PER,Jul,4
+LOC,Floride,4
+PER,Jean-Claude Ghinozzi,4
+LOC,Tarnais,4
+LOC,Voie lactée,4
+LOC,Angers,4
+LOC,Seine-Saint-Denis,4
+LOC,Etats-Unis,4
+LOC,Kourou,4
+LOC,Nouvelle-Galles du Sud,4
+PER,Labubu,3
+PER,Marshall Acton III,3
+PER,Général Perrot,4
+PER,Hérode,4
+LOC,Richmond,3
+LOC,golfe du Mexique,4
+LOC,Bruxelles,4
+ORG,01Net,3
+LOC,Normandie,4
+LOC,Biélorussie,4
+LOC,Bordeaux,4
+LOC,Grand-Est,4
+PER,Pierre-Édouard Stérin,4
+LOC,Royaume-Uni,4
+PER,Jean-Michel Jarre,4
+PER,Jean-Christophe Levescot,4
+ORG,Specialized,3
+ORG,Front national,4
+ORG,Duolingo,3
+PER,Dyad,3
+ORG,Mediapart,3
+LOC,Nouvelle-Zélande,4
+LOC,Vercelli,3
+LOC,Golfe d’Amérique,3
+ORG,Ouest-France,3
+ORG,ministère de la Culture,4
+ORG,Avidsen,4
+LOC,Metaverse,3
+LOC,Moyen-Orient,3
+ORG,King,3
+ORG,Somfy,4
+PER,Bard,3
+LOC,Nouveau-Mexique,4
+LOC,Auvers-sur-Oise,4
+LOC,Bercy,3
+LOC,Emirats arabes unis,4
+ORG,Avast,3
+ORG,Seuil,3
+PER,Rui-Siang Lin,3
+LOC,Lannion,3
+LOC,Pékin,4
+ORG,Agfaphoto,3
+ORG,Balenciaga,4
+PER,JetClean,3
+ORG,Devolver,3
+LOC,Dugny,4
+PER,Cantat,3
+PER,Stéphane Richard,4
+ORG,Pathé Palace,3
+ORG,Rowenta,3
+ORG,Nations unies,4
+LOC,Polaire,3
+LOC,Silicon Vally,3
+LOC,Voie Lactée,3
+LOC,Européens,3
+LOC,Brésiliens,3
+PER,président de la République,3
+LOC,Strasbourgeois,3
+LOC,Berger,3
+LOC,de France,3
+LOC,le Japon,3
+LOC,Franco-Canadien,3
+ORG,ministre du Travail,3
+LOC,Norvégien,3
+LOC,la Chine,3
+PER,Ammo,3
+LOC,Le Japon,3
+LOC,Américain,3
+ORG,Conseil français des associations pour les droits de l'enfants,3
+LOC,Français,3
+LOC,musée du Louvre,3
+LOC,La France,3
+LOC,musée Grévin,3
+LOC,Britanniques,3
+LOC,Russes,3
+LOC,Américains,3
+LOC,Cour suprême,3
+LOC,YR4,3
+LOC,Sud-Coréen,3
+ORG,Fnac,3
+LOC,base d’Andoya,3
+LOC,États,3
+LOC,la France,3
+LOC,la Terre,3
