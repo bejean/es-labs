@@ -8,3 +8,5 @@ scripts/local-cached/
 elastic-start-local/
 
 local-cached/
+
+tests/ner_quality.csv
