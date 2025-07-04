@@ -96,17 +96,29 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(description="Evaluate NER extraction quality")
     parser.add_argument("--input", required=True, type=str, help="Input directory")
+    parser.add_argument("--action", required=False, type=str, default="all", help="Actions : all (default), concat, compute")
     parser.add_argument("--output_csv_file", required=False, type=str, help="Output CSV file")
     parser.add_argument("--min_files", required=False, type=int, help="Minimum number of files")
     args = parser.parse_args()
     directory_input = args.input
+    action = args.action
     output_csv_file = args.output_csv_file
     min_files = args.min_files
 
-    concat_in_multiple_files(directory_input, output_csv_file, min_files)
+    if not os.path.exists(directory_input):
+        print(f"Error: Input directory not found {directory_input}")
+        exit()
 
-    results = compute_precision_recall(directory_input, output_csv_file)
-    for file, cats in results.items():
-        print(f"\n{file}")
-        for cat, vals in cats.items():
-            print(f"  {cat}: precision={vals['precision']}, recall={vals['recall']}")
+    if action in {"all", "concat"}:
+        concat_in_multiple_files(directory_input, output_csv_file, min_files)
+
+    if action in {"all", "compute"}:
+        if output_csv_file and not os.path.exists(output_csv_file):
+            print(f"Error: The file {output_csv_file} was not found.")
+            exit(1)
+
+        results = compute_precision_recall(directory_input, output_csv_file)
+        for file, cats in results.items():
+            print(f"\n{file}")
+            for cat, vals in cats.items():
+                print(f"  {cat}: precision={vals['precision']}, recall={vals['recall']}")

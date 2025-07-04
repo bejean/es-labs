@@ -1,0 +1,54 @@
+{
+  "description": "NER pipeline",
+  "processors": [
+    {
+      "script": {
+        "description": "Concatenate fields for NER input",
+        "lang": "painless",
+        "source": "String title = ctx.containsKey('title') ? ctx.title + '.' : ''; String desc = ctx.containsKey('meta_description') ? ctx.meta_description : ''; ctx.ner_field = title + ' ' + desc;"
+      }
+    },
+    {
+      "inference": {
+        "model_id": "philschmid__distilroberta-base-ner-conll2003",
+        "target_field": "ml.ner",
+        "field_map": {
+          "ner_field": "text_field"
+        }
+      }
+    },
+    {
+      "script": {
+        "lang": "painless",
+        "if": "return ctx['ml']['ner'].containsKey('entities')",
+        "source": "Map tags = new HashMap(); for (item in ctx['ml']['ner']['entities']) { if (!tags.containsKey(item.class_name)) tags[item.class_name] = new HashSet(); tags[item.class_name].add(item.entity);} ctx['tags'] = tags;"
+      }
+    },
+    {
+      "remove": {
+        "field": "ml"
+      }
+    },
+    {
+      "remove": {
+        "field": "ner_field"
+      }
+    }
+  ],
+  "on_failure": [
+    {
+      "set": {
+        "description": "Index document to 'failed-<index>'",
+        "field": "_index",
+        "value": "failed-{{{ _index }}}"
+      }
+    },
+    {
+      "set": {
+        "description": "Set error message",
+        "field": "ingest.failure",
+        "value": "{{_ingest.on_failure_message}}"
+      }
+    }
+  ]
+}

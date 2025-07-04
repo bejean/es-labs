@@ -6,25 +6,27 @@ import argparse
 import urllib3
 from elasticsearch import Elasticsearch, helpers
 
-
 # === FUNCTION TO PREPARE BULK ACTIONS ===
-def generate_bulk_actions(docs, index_name):
+def generate_bulk_actions(docs, index_name, pipeline):
     for doc in docs:
-        yield {
+        action = {
             "_index": index_name,
-            "_id": doc.get("id"),  # Optional: use "id" field if present
+            "_id": doc.get("id"),
             "_source": doc
         }
+        if pipeline:
+            action["pipeline"] = pipeline
+        yield action
 
 # --- Main Processing
-def main(directory, index_name, es_host, es_username, es_password, insecure, es_ca_cert, bulk_size, max_doc):
+def main(directory, index_name, pipeline, es_host, es_username, es_password, bulk_size, max_doc):
 
     # Connect to your cluster
     es = Elasticsearch(
         es_host,
         basic_auth=(es_username, es_password),
-        ca_certs=es_ca_cert,
-        verify_certs=not insecure
+        verify_certs=False,
+        ssl_show_warn=False
     )
 
     # === Process each JSON files
@@ -47,7 +49,7 @@ def main(directory, index_name, es_host, es_username, es_password, insecure, es_
                     while True:
                         try:
                             print(f"bulk {bulk_count} ", end=" ")
-                            actions = generate_bulk_actions(arr[bulk_count*bulk_size:(bulk_count+1)*bulk_size], index_name)
+                            actions = generate_bulk_actions(arr[bulk_count*bulk_size:(bulk_count+1)*bulk_size], index_name, pipeline)
                             success_count, failed_items = helpers.bulk(es, actions, stats_only=False, raise_on_error=False)
 
                             if failed_items:
@@ -84,32 +86,25 @@ if __name__ == "__main__":
                         help="ES username")
     parser.add_argument("--password", required=True, type=str,
                         help="ES password")
-    parser.add_argument('--insecure', required=False, action='store_true',
-                        help="No check ES SSL certificate")
-    parser.add_argument("--ca_cert", required=False, type=str,
-                        help="ES SSL CA certificate")
+    parser.add_argument('--pipeline', required=False, type=str,
+                        help="Ingest pipelin")
     parser.add_argument("--bulk_size", required=False, default=10, type=int,
                         help="ES bulk size")
     parser.add_argument("--max_doc", required=False, default=0, type=str,
                         help="maximum number of document to be indexed (0 means no limit)")
 
     args = parser.parse_args()
-    DIRECTORY = args.input
-    INDEX_NAME = args.index
-    ES_HOST = args.host
-    ES_USERNAME = args.user
-    ES_PASSWORD = args.password
-    ES_CA_CERT = args.ca_cert
-    BULK_SIZE = args.bulk_size
-    MAX_DOC = args.max_doc
-    INSECURE = args.insecure
+    directory = args.input
+    index_name = args.index
+    es_host = args.host
+    es_username = args.user
+    es_password = args.password
+    bulk_size = args.bulk_size
+    max_doc = args.max_doc
+    pipeline = args.pipeline
 
-    if not os.path.exists(DIRECTORY):
-        print(f"Error: Input directory not found {DIRECTORY}")
+    if not os.path.exists(directory):
+        print(f"Error: Input directory not found {directory}")
         exit()
 
-    if ES_CA_CERT and not os.path.exists(ES_CA_CERT):
-        print(f"Error: ES CA certificate not found {ES_CA_CERT}")
-        exit()
-
-    main(DIRECTORY, INDEX_NAME, ES_HOST, ES_USERNAME, ES_PASSWORD, INSECURE, ES_CA_CERT, BULK_SIZE, MAX_DOC)
+    main(directory, index_name, pipeline, es_host, es_username, es_password, bulk_size, max_doc)
