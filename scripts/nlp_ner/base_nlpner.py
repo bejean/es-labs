@@ -12,6 +12,11 @@ class BaseNlpNer(ABC):
         }
 
     def contains_alpha(self, text: str) -> bool:
+        """
+        Returns True if the given text contains at least one alphabetic character, False otherwise.
+        :param text: The text to check
+        :return: True if the text contains an alphabetic character, False otherwise
+        """
         return any(c.isalpha() for c in text)
 
     def add_entity_to_tags(self, label, text, tags, tags_insensitive):
@@ -35,10 +40,12 @@ class BaseNlpNer(ABC):
             "′",  # prime
             "″",  # double prime
             "-",
+            ":",
         ]
-        pattern = ''.join(special_chars)
-        if text[0] in pattern or text[-1] in pattern:
-            return
+
+        for special_char in special_chars:
+            if special_char in text:
+                return
 
         if not self.contains_alpha(text):
             return
