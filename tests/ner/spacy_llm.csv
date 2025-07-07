@@ -1,101 +1,95 @@
+PER,14 mars,1
 ORG,VivaTech,5
-LOC,Las Vegas,31
+LOC,Las Vegas,30
 ORG,Consumer Electronics Show,2
 ORG,Pathé Palace,1
 LOC,Paris,31
-ORG,Game Boy,1
+PER,The Shapeshifter,1
 ORG,Kickstarter,2
 ORG,Epic Games,13
-ORG,Microsoft,117
+ORG,Microsoft,114
 ORG,Games,3
 PER,Joe Kreiner,1
 ORG,Snapchat,13
 ORG,musée du Louvre,1
-ORG,20 Minutes,276
+ORG,20 Minutes,279
 ORG,Asus,4
-ORG,Cultura,1
-ORG,Boulanger,1
-ORG,GrosBill,1
-ORG,CyberTek,1
-PER,MacBook,1
-ORG,Apple,171
-ORG,Twitter,55
-PER,Elon Musk,52
-ORG,Samsung,65
-ORG,Huawei,24
-LOC,Etats-Unis,57
+PER,MacBook,2
+ORG,Apple,170
+ORG,Twitter,54
+PER,Elon Musk,51
+ORG,Samsung,67
+ORG,Huawei,21
 LOC,TikTok,3
 PER,internautes,2
 ORG,Bumble,3
 ORG,Tinder,6
 ORG,Specialized,1
-LOC,ville,2
+LOC,ville,3
 LOC,campagne,1
 PER,Sam Altman,13
-PER,ChatGPT,9
+PER,ChatGPT,11
 LOC,Silicon Valley,4
-ORG,Google,154
+LOC,Google,5
 PER,Alexa,18
-ORG,Windows,26
+ORG,Windows,28
 ORG,Windows 8,1
 PER,Roam,1
-ORG,Sonos,19
-ORG,eBay,2
-ORG,NES,1
-PER,Power Glove,1
+ORG,Sonos,17
 LOC,Chine,19
 LOC,Xinjiang,1
-ORG,Netflix,18
-ORG,Sony,42
+ORG,Netflix,17
+PER,True Wireless,1
+ORG,Sony,40
 ORG,Sony Interactive Entertainment,1
 PER,Jim Ryan,1
 PER,Surface Pro,1
 PER,Macbook Air,1
 PER,Surface RT,1
-PER,CES,1
 ORG,Aftershokz,1
 PER,Follina,1
 PER,Arc Ultra,1
 ORG,Threads,3
-ORG,Meta,50
+ORG,Meta,49
 LOC,France,92
 LOC,Europe,22
 PER,Bonne Maman,1
 ORG,IA,4
-ORG,start-up,1
 PER,Chungin Lee,1
 ORG,Tokyo Game Show,2
+ORG,Google,152
 PER,Noël,7
 PER,père Noël,2
 ORG,WhatsApp,33
-PER,hackers,14
+PER,hackers,13
 PER,victimes,2
-PER,autorités australiennes,1
-ORG,PlayStation,12
+ORG,associations,1
+ORG,PlayStation,13
 LOC,Japon,9
 ORG,supermarchés,1
 ORG,xAI,6
 ORG,OpenAI,19
 ORG,Paris Games Week,5
 ORG,Wish,1
-PER,Arc,1
-ORG,Telegram,7
+PER,R50V,1
+PER,EOS R50V,1
+ORG,Canon,5
+ORG,Telegram,8
 PER,Pavel Durov,1
-PER,Mark Zuckerberg,18
+PER,Mark Zuckerberg,16
 LOC,Bourget,1
 PER,Android,6
-PER,Biden,2
 ORG,Dyson,6
 PER,20 Minutes,10
-ORG,Store,7
-PER,iPad Air,2
+ORG,Store,8
+PER,iPad Air,3
 PER,iPad 11,1
 LOC,Australie,5
 ORG,une école,1
 ORG,école,1
 PER,paléontologues,1
-ORG,ChatGPT,30
-LOC,européenne,9
+ORG,ChatGPT,28
+LOC,européenne,10
 PER,Gates,1
 PER,Allen,1
 PER,Ballmer,1
@@ -103,40 +97,35 @@ PER,Nadella,1
 PER,Bill Gates,3
 PER,Paul Allen,1
 LOC,Albuquerque,1
-LOC,Nouveau-Mexique,1
 ORG,Instagram,43
 ORG,Rowenta,1
-PER,X-Ô160,1
 PER,Erbium,1
 ORG,Bluetooth,1
 ORG,Mozilla,3
 ORG,Firefox,2
 PER,Firefox Voice,1
-ORG,Final Fantasy,2
+ORG,Final Fantasy,1
 LOC,NES,1
 LOC,Super NES,1
 ORG,Apple Intelligence,1
 ORG,Intelligence,1
 ORG,BBC,1
-LOC,Grande-Bretagne,2
-PER,iPhone,11
+PER,iPhone,13
 PER,Lady Gaga,1
 ORG,Fortnite Festival,2
-LOC,États-Unis,7
 ORG,Windows Store,1
-ORG,Whatsapp,1
+ORG,Whatsapp,2
 ORG,Fondation Descartes,1
-ORG,Nintendo,28
-PER,analystes,1
+ORG,Nintendo,27
 ORG,Ubisoft,6
 ORG,Bandai,1
-ORG,TikTok,47
+ORG,TikTok,49
 ORG,ByteDance,3
 ORG,Tesla,13
 PER,Cyberphone,1
-ORG,HeyGen,1
-ORG,Playstation,7
-PER,Wukong,1
+PER,Cybertruck,1
+ORG,Playstation,6
+PER,Wukong,2
 ORG,DJI,8
 ORG,Epic Game,1
 ORG,Green_e,1
@@ -144,9 +133,9 @@ ORG,Vivatech,1
 ORG,Nvidia,3
 PER,Jensen Huang,1
 ORG,LEGO,1
-ORG,Twitch,16
+ORG,Twitch,15
 ORG,DeepSeek,8
-ORG,Xiaomi,20
+ORG,Xiaomi,21
 PER,Sundar Pichai,2
 PER,YR4,1
 LOC,Terre,14
@@ -160,16 +149,17 @@ ORG,Nikon,1
 PER,lia,1
 LOC,Algérie,1
 PER,Christophe Lafaye,1
-ORG,CES,20
+ORG,CES,17
+ORG,Body Minute,1
+PER,Laurène Lévy,1
 ORG,MediaTek,2
 ORG,AI act,1
 ORG,Apple Music,4
-ORG,Google Assistant,3
-LOC,Google,5
+ORG,Google Assistant,2
 ORG,JO 2024,1
 ORG,OnlyFans,1
 ORG,Block out,1
-ORG,CNIL,2
+ORG,CNIL,1
 ORG,Le Pommier,1
 ORG,TomTom,1
 ORG,Android Automotive,1
@@ -197,10 +187,8 @@ ORG,Sennheiser,2
 ORG,Depeche Mode,1
 ORG,Muse,3
 LOC,Stade de France,1
-PER,MetaAI,1
 ORG,Skull & Bones,1
-ORG,George Lucas,1
-ORG,Micromania-Zing,1
+PER,George Lucas,1
 ORG,Gamestop,1
 PER,psychologie cognitive,1
 PER,AD Laurent,1
@@ -208,41 +196,38 @@ PER,Aurore Bergé,1
 ORG,Duolingo,5
 PER,Luis von Ahn,1
 PER,Severin Hacker,1
-ORG,Waze,4
+ORG,Waze,3
 ORG,Noyb,2
 ORG,autrichienne de protection des données,1
 PER,californienne,1
 PER,Satoshi Nakamoto,1
 PER,Nick Szabo,1
+PER,Lundi,1
+ORG,Moustache Bikes,1
 PER,Trump,10
+PER,MAX G2,1
+ORG,Segway,2
 LOC,Canada,3
 PER,Tobi Lütke,1
 ORG,Shopify,1
 ORG,Android,16
 PER,Ivy Rec,1
 PER,Rec,1
-ORG,Canon,4
 LOC,CES,3
 ORG,Toshiba,1
 ORG,LG,14
 ORG,Activision,4
-PER,X,10
-PER,iPhone X,1
 PER,pape François,1
 ORG,Simpson,1
-LOC,CES 2024,1
-PER,BeamO,1
-PER,Withing,1
-ORG,Withings,3
 PER,Tim Cook,7
 PER,Miho Janvier,1
 ORG,Urban Cuisine,1
-ORG,Xbox,9
+ORG,Xbox,8
 PER,Veo,1
 LOC,VivaTech,1
 ORG,NoPlace,1
 LOC,Allemagne,7
-ORG,Google Maps,6
+ORG,Google Maps,7
 PER,Ascender,1
 PER,GTA VI,2
 ORG,Grand Theft Auto,1
@@ -255,23 +240,23 @@ LOC,Times Square,1
 LOC,Mars,8
 ORG,rover Zhurong,1
 ORG,Spliiit,1
-ORG,Destination Nature,1
 ORG,WearOS,1
 LOC,Internet,1
 ORG,IFA,7
-ORG,Amazon,19
+ORG,Amazon,18
 LOC,Berlin,8
 ORG,SAR,1
 LOC,désert,1
 PER,ingénieur,2
 PER,Nasdas,2
-ORG,Windows 10,3
+LOC,Windows,4
 PER,Space X,1
 ORG,Michou,1
-ORG,HTC,1
+PER,gamers,1
+ORG,HTC,2
 PER,Son,1
-PER,adolescent,1
-ORG,Fortnite,20
+PER,adolescent américain,1
+ORG,Fortnite,19
 ORG,Rocket League,1
 ORG,League of Legends,5
 ORG,Mr Beast,1
@@ -282,42 +267,39 @@ PER,Annie Altman,1
 ORG,Mastodon,1
 LOC,Bruxelles,2
 LOC,CES 2022,1
+ORG,Withings,2
 PER,Mathieu Letombe,1
 PER,Oussama Ammar,1
 ORG,The Family,1
 ORG,Arlo,1
 PER,GTA,1
 PER,San Andreas,1
-ORG,Don’t Nod,1
-ORG,X,22
+ORG,X,21
 PER,Fortnite,2
 PER,scientifiques américains,1
 LOC,Nice,2
 LOC,Montpellier,3
 ORG,Primephonic,1
-PER,Français,5
-PER,Général Perrot,1
-PER,Général Patrick Perrot,1
-ORG,Gendarmerie nationale,1
+PER,Français,6
 ORG,Copilot,1
 ORG,Gemini,3
 PER,Thierry Breton,3
-PER,Les premiers,1
 PER,HomePod mini,1
-ORG,Commission européenne,3
+ORG,Commission européenne,4
 ORG,JO de Paris,3
+PER,groupe européen de défense des droits des consommateurs,1
 ORG,Flipper Zero,2
 PER,Tamagoshi,1
 LOC,Xbox,1
 LOC,PC,1
 LOC,Android,2
-ORG,start-up japonaise,1
 PER,Geoffrey Hinton,1
 PER,astronomes,2
 LOC,Voie lactée,2
 ORG,Gafa,2
 ORG,Commerce,1
 ORG,Net,1
+PER,Biden,1
 PER,Tim Wu,1
 ORG,ZEvent,4
 LOC,scandinaves,1
@@ -327,7 +309,6 @@ PER,iPad,1
 ORG,Coupe du monde,1
 ORG,Wikipédia,2
 ORG,Bose,6
-ORG,Assassin’s Creed Shadows,2
 PER,Yasuke,2
 LOC,salon,2
 ORG,Sprint,1
@@ -338,25 +319,25 @@ ORG,Youtube,3
 PER,Inoxtag,5
 ORG,Minecraft,5
 ORG,Mario,1
-PER,Jean-Marie Le Pen,1
 ORG,Front national,1
-ORG,iPhone,14
+ORG,iPhone,12
 ORG,Dodo,1
 PER,iX21 Smartpillow,1
-ORG,iOS,5
+ORG,iOS,8
 LOC,Pompéi,1
-PER,Donald Trump,12
-ORG,Musk,2
+PER,Donald Trump,13
+ORG,Musk,3
 ORG,Audio Technica,1
-LOC,Nintendo,5
+LOC,Nintendo,6
 ORG,Free,4
 PER,festivaliers,1
 PER,artistes,1
-ORG,Honor,4
+PER,Honor 200 Pro,1
+PER,200 Pro,1
 ORG,Studio Harcourt,1
-PER,Atom,1
 ORG,Dangbei,1
 ORG,Hestiia,1
+ORG,Stadia,1
 PER,Steve Jobs,2
 ORG,Essentiel b,1
 ORG,JVC,1
@@ -364,59 +345,58 @@ ORG,Urbanears,1
 ORG,Oppo,8
 ORG,Divacore,1
 ORG,Coyote,3
-ORG,ministère de l’Intérieur,1
 PER,Emilie,1
-PER,WelcomeEye Look,1
-ORG,Philips,11
+ORG,Philips,12
 PER,Cyril Schreiner,1
 ORG,gendarmerie,1
-ORG,gouvernement américain,1
-PER,Musk,19
+ORG,gouvernement américain,2
+ORG,YouTube,29
+PER,Musk,17
 PER,streameuses,1
 ORG,Skyblogs,2
+ORG,DeepMind,1
+PER,Starcraft II,1
 ORG,Salon de la Photo,2
-ORG,Nasa,14
+ORG,Nasa,15
+PER,Echo Show 15,1
 ORG,SpaceX,12
 ORG,Google Chrome,4
 ORG,Vivlio,2
 ORG,TNT,1
 LOC,New York,4
-ORG,Musée de l'Etat de New York,1
-PER,Quatre influenceuses,1
+PER,influenceuses,1
 PER,hacker,1
 PER,Bitcoin,2
+ORG,Jeux vidéo,1
 ORG,GP Explorer,1
-PER,Squeezie,6
+PER,Squeezie,7
 ORG,Mistral,1
 ORG,Midjourney,1
 LOC,Grand Palais,3
 LOC,Los Angeles,4
 ORG,Avidsen,2
 PER,Grok,2
-PER,OneBlade,2
+PER,OneBlade,3
 ORG,Google I/O,2
 LOC,Amérique du nord,1
 ORG,Qwant,1
-PER,Jean-Claude Ghinozzi,1
 PER,Xavier Niel,3
 ORG,20 minutes,3
 ORG,Booking,1
 LOC,Antarctique,1
 PER,Rémi Hontang,1
-PER,Jean-Christophe Levescot,1
 ORG,lesalexiens.fr,1
 ORG,Consumer Electronic Show,1
 PER,Adibou,1
-PER,iOS 12,1
-PER,pirates,3
+PER,iOS,2
 ORG,CAPTCHA,1
-ORG,UFC-Que choisir,1
+ORG,Internet,5
 ORG,Tobii,1
 ORG,Hydrao Aloé,1
 LOC,Jezero,1
-ORG,Perseverance,1
+PER,Perseverance,1
 LOC,Richmond,2
-PER,Urbane 2nd,1
+ORG,Réseaux sociaux,4
 ORG,Balenciaga,2
 PER,Dopamine,1
 PER,Suni Williams,8
@@ -424,7 +404,6 @@ PER,Butch Wilmore,8
 ORG,Boeing,4
 ORG,Fitbit,2
 PER,hackers chinois,1
-ORG,YouTube,27
 PER,Johnatan Uzan,1
 ORG,BCG Platinion,1
 ORG,Spotify,10
@@ -437,10 +416,7 @@ PER,Pizzagate,1
 ORG,Clinton,1
 ORG,Focal,1
 ORG,Showroomprivé,1
-PER,Hiroshi Lockheimer,1
-PER,Shoe 1,1
-LOC,iPhone,3
-LOC,iOS,2
+PER,designer,1
 ORG,Fairphone,4
 LOC,Orange,1
 PER,Liens,1
@@ -451,13 +427,9 @@ LOC,Californie,5
 ORG,CopperStealer,1
 ORG,PayPal,1
 PER,Pierre Niney,1
-ORG,James Webb,2
 ORG,Starlink,1
-PER,sœur,1
+PER,sœur,2
 PER,frère,1
-ORG,Premier ministre,1
-PER,Boris Johnson,1
-PER,Britanniques,1
 ORG,IBM,4
 PER,Eagle,1
 ORG,Fujifilm,3
@@ -467,19 +439,19 @@ PER,George Floyd,1
 ORG,Anonymous,3
 ORG,Black Lives Matter,1
 LOC,Mountain View,6
-ORG,Centre national d’instruction cynophile de la gendarmerie,1
-PER,Assassin’s Creed Shadows,1
-ORG,Assassin’s Creed,1
+ORG,Steam,5
+ORG,Valve,1
+ORG,Dota 2,1
+LOC,transports en commun,1
+LOC,rue,1
 ORG,HelloQuitteX,1
 PER,Joe Biden,2
 ORG,AppleTV+,1
-PER,Emmanuel Macron,7
-LOC,Royaume-Uni,6
+PER,Emmanuel Macron,8
 ORG,iFixit,1
 PER,Sandra Auboy,1
-PER,Zelda,6
-LOC,Seine-Maritime,1
-ORG,Orange,7
+PER,Zelda,7
+ORG,Orange,5
 PER,Image Playground,1
 ORG,Firefly Aerospace,2
 PER,Black Panther,1
@@ -490,29 +462,23 @@ LOC,grandes villes européennes,1
 PER,Walkman,2
 ORG,Paris Audio Vidéo Show,2
 ORG,Qiara,1
-LOC,Windows,4
+PER,au juste prix,1
 LOC,Facebook,2
 LOC,Meta,1
-LOC,UNC-Chapel Hill,1
 PER,Andrew Chin,1
 ORG,JO de Paris 2024,1
 ORG,Gigabud,1
 ORG,Spynote,1
-PER,Galaxy S25,1
 PER,Nicolas,1
 ORG,General Motors,1
 ORG,Cruise,1
-ORG,Rabbit R1,1
-ORG,Pin,2
 ORG,Humane,1
-PER,Sync 20,1
+PER,Rabbit R1,2
 ORG,Poly,1
-ORG,Discord,6
+ORG,Discord,5
 ORG,iPad,1
 ORG,Quanta,1
 ORG,DESI,1
-PER,Cédric,1
-PER,Cédric O,1
 ORG,BeReal,1
 PER,Le Seigneur des anneaux,1
 PER,Sora,1
@@ -521,73 +487,66 @@ PER,Skyline,1
 ORG,HMD,1
 PER,Windows 11,1
 ORG,Messenger,4
-ORG,Steam,4
 PER,son,1
 ORG,Tencent,2
 LOC,Ubisoft,1
-PER,Galaxy Fold,1
+PER,Galaxy Fold,2
 PER,Lune,2
 PER,Galaxy Z Flip 6,1
 PER,Razr 50 Ultra,1
 ORG,Dolby,3
 ORG,startup américaine,1
-PER,candidat républicain,1
 ORG,Bluesky,4
+ORG,réseau social X,2
 LOC,Afrique du Sud,2
 PER,Deux frères,1
 PER,Sims,1
-ORG,Les Sims,3
-PER,Level Up,1
+ORG,Les Sims,4
 PER,fondateur de The Anonymous Project,1
 ORG,Epson,1
 PER,Android TV,1
 ORG,Handi Exceller,1
-LOC,Grand-Est,1
-PER,créateur,1
 ORG,Flappy Bird,2
-LOC,Musée d'Orsay,2
 LOC,Ukraine,5
 LOC,Russie,4
 ORG,Marshall,7
 PER,Anne Bouverot,1
-PER,Macron,5
-LOC,YouTube,6
+PER,Macron,6
+LOC,YouTube,5
+PER,iPhone 11,4
 LOC,du Sud,1
 PER,ingénieur en mécanique,1
 PER,Sonny,1
+ORG,Morphée Zen,1
 ORG,Bing,3
+PER,Switch 2,1
 PER,Céline,1
 ORG,gouvernement,1
 ORG,Winora,1
-PER,Nous,1
 ORG,NimzaLoader,1
 PER,Sneha Revanur,1
 PER,Greta Thunberg,1
 ORG,Encode Justice,1
-ORG,Crowdstrike,2
-PER,iOS 15,1
-ORG,Sommet de l’IA,6
 LOC,Afrique,2
 ORG,Mips,1
-PER,Jean-Noël Barrot,2
-ORG,Sénat,1
+LOC,Sénat,2
 PER,Ophenya,1
 PER,Arthur Delaporte,1
 PER,Pauline Ferrari,1
+PER,Ocelot,1
 ORG,Amazon Web Services,1
-LOC,Sénat,1
 ORG,Streamers Awards,1
 ORG,Golden Globes,1
 PER,Etoiles,2
 ORG,Ecojoko,1
-LOC,Microsoft,3
-LOC,Golfe d’Amérique,1
+LOC,Microsoft,2
 LOC,Mexique,2
 LOC,golfe du Mexique,1
 PER,Kenza Waldorf,1
 PER,Galansire,1
-ORG,Maison,1
+ORG,Maison connectée,1
 LOC,Européenne,5
+PER,X,7
 ORG,Music,1
 ORG,Alphabet,10
 ORG,HackBoss,1
@@ -598,19 +557,15 @@ LOC,Israël,4
 ORG,Une entreprise,1
 ORG,Arts,1
 ORG,MoonBounce,1
-PER,iPhone 11,3
 PER,Pixel 4,2
-PER,Edge,2
-ORG,Chrome,7
+PER,Edge,3
 ORG,Internet Explorer,2
 PER,Missy Elliott,1
 LOC,Vénus,1
 ORG,Meta AI,2
 ORG,Cowboy,1
-PER,WH-1000XM3,2
 ORG,Sanctuary,1
 LOC,Moon,1
-ORG,mission chinoise Chang’e 6,1
 PER,Hitler,1
 PER,Kanye West,1
 PER,Ye,1
@@ -622,10 +577,9 @@ PER,IA,4
 LOC,Brésil,5
 ORG,Blue Origin,3
 PER,Jeff Bezos,2
-PER,Liseuses,1
 ORG,Cosmo Vision,1
 PER,Zelensky,2
-LOC,X,3
+LOC,X,2
 PER,Niel,1
 PER,Arnault,1
 ORG,BpiFrance,1
@@ -634,19 +588,18 @@ PER,GTA 6,1
 ORG,Rockstar,2
 ORG,Linux,2
 PER,Olivier Alexandre,1
-ORG,CNRS,1
+ORG,CNRS,2
 ORG,Seuil,1
-ORG,i-liveStyle,1
+PER,youtubeurs,1
+PER,instagrammeurs,1
 PER,Armes hypersoniques,1
 ORG,Cosmos,2
 ORG,AI,2
-PER,GPT-4,2
-PER,Saint-Valentin,1
 ORG,EA Sports FC,1
 ORG,Electronic Arts,2
 LOC,Espace,3
-LOC,Dimorphos,1
 PER,Dart,1
+PER,Dimorphos,1
 LOC,Corée du Sud,4
 ORG,mairie,1
 ORG,Disney,1
@@ -660,6 +613,7 @@ ORG,Apple Store,1
 ORG,Riot Games,1
 PER,Sune Lehmann,1
 ORG,technique du Danamerk (DTU),1
+PER,parents,2
 PER,enfants,3
 ORG,EA Sports,1
 PER,FC,1
@@ -669,12 +623,12 @@ PER,AlienBot Banker,1
 ORG,Google Play Store,1
 PER,Yann LeCun,1
 ORG,Slack,3
+PER,chercheurs français,1
+PER,Soleil,1
 ORG,Smart TV,1
 ORG,ZTE,1
 PER,Stellar Blade,1
-LOC,américaine,1
-ORG,ONG,2
-PER,Frances Haugen,4
+PER,Frances Haugen,3
 PER,Elle,1
 PER,avocat,1
 PER,Guava Beauty,1
@@ -685,24 +639,21 @@ ORG,Starliner,3
 ORG,Guardian,1
 PER,Eric Bothorel,1
 ORG,Renaissance,2
-LOC,Côtes-d’Armor,1
-PER,scientifiques,2
-PER,chercheurs,7
+PER,scientifiques,1
+PER,chercheurs,6
 ORG,Apex Legends,1
 PER,LGBT+,1
-LOC,Studio Ghibli,1
 ORG,23andMe,1
-ORG,Samsung Galaxy,2
 ORG,Intel,5
-PER,Protoclone,1
-ORG,Clone Robotics,1
 ORG,Diablo IV,1
 PER,Evêque,1
 LOC,Sydney,1
+LOC,australiennes,1
 PER,Siri,3
 PER,Gemini,4
-ORG,Salon de l’agriculture,1
 ORG,Farming Simulator,1
+PER,Tibo InShape,4
+ORG,TF1,2
 ORG,Apple Arcade,1
 ORG,Metallica,2
 ORG,Billie Eilish,1
@@ -722,6 +673,7 @@ PER,Tycoon,1
 ORG,Niantic,5
 ORG,Pokémon Go Fest,1
 ORG,data centers,1
+PER,pirates,2
 ORG,AirTag,1
 ORG,WOH G64,1
 LOC,européen austral,1
@@ -732,28 +684,27 @@ ORG,Google Drive,2
 PER,Face ID,1
 PER,Touch ID,1
 PER,NoWay4u_Sir,1
-ORG,Pixel,1
+ORG,Pixel 9,1
 ORG,FBI,2
 PER,Blagodariov,1
-PER,PDG,3
+PER,PDG,4
 PER,Sophia,1
-ORG,L’ADN,1
 ORG,Wilkinson,1
 PER,Vera,1
+ORG,ONG,1
+ORG,Chrome,6
 ORG,Signal,3
 PER,Florent Roulier,1
 ORG,Niji,1
-ORG,Règlement européen sur les services numériques (DSA),1
-ORG,Euclid,1
 ORG,ChapGPT,1
 PER,Abrège frère,1
 PER,Réfléchis frère,1
 PER,Chrome,1
-PER,Black Myth Wukong,1
 ORG,Game Science,1
 LOC,système solaire,2
-LOC,Jupiter,1
+LOC,Jupiter,2
 LOC,Io,1
+PER,Juno,1
 ORG,Galaxy Note,1
 ORG,Galaxy S,1
 ORG,Fold,1
@@ -772,12 +723,12 @@ PER,Duo,3
 PER,Dracula,1
 PER,Spot,1
 ORG,Boston Dynamics,2
-ORG,Panasonic,3
-ORG,Blizzard,2
+ORG,Panasonic,2
+ORG,Blizzard,1
 ORG,AMD Ryzen,1
 ORG,Reddit,6
-PER,Un jeune développeur,1
-ORG,Ariane 6,5
+ORG,Ariane 6,4
+LOC,iPhone,3
 ORG,Raccourcis,1
 ORG,Bard,1
 ORG,Bing AI,1
@@ -790,19 +741,17 @@ PER,RankBrain,1
 ORG,Terraillon,1
 ORG,Français Mistral,1
 PER,Magistral,1
+ORG,Xbox Live,3
 ORG,Xbox Network,1
-ORG,Xbox Live Gold,1
 PER,Spez,1
 LOC,Reddit,1
 ORG,Sam Altman,1
 PER,Cosmo,1
 LOC,varoise,1
 ORG,Solar Brother,1
-ORG,University Press,1
 PER,Skybender,1
 ORG,Hogwarts Legacy,1
 ORG,Incognito Market,1
-PER,Rui-Siang Lin,1
 PER,destinataire,1
 ORG,Lenovo,2
 PER,Conteuses numériques,1
@@ -817,51 +766,50 @@ PER,Jésus,1
 ORG,Deus in machina,1
 ORG,Peugeot,1
 ORG,Cicada 3301,1
-ORG,I-Percut,1
+PER,CES 2023,2
 LOC,Tarnais,1
 LOC,occitane,1
-LOC,CES Las Vegas,1
+LOC,CES Las Vegas,2
+ORG,Windows 10,2
+PER,adolescents,2
 ORG,Meta Horizon,1
-PER,parents,1
 ORG,Nobel,1
-PER,Les Sims 4,1
-PER,Najat Vallaud-Belkacem,1
 ORG,RT,2
 ORG,Sputnik,2
 LOC,Moscou,1
-LOC,nationale,3
+LOC,nationale,4
 ORG,Plex,1
 PER,coronavirus,1
 PER,Ochy,1
 ORG,Ray Ban,1
-ORG,MrBeast,1
 PER,PewDiePie,1
+PER,MrBeast,4
 LOC,Blue Origin,1
-ORG,L’Agence spatiale européenne,1
-ORG,mission BepiColombo,1
 LOC,Mercure,1
 LOC,pôle nord,1
+ORG,mission BepiColombo,1
 ORG,XChat,1
 LOC,Birmanie,1
 ORG,Centrale nucléaire,1
 ORG,Seveso,1
 PER,sismologue,1
+PER,Google Assistant,2
 ORG,Lenso Cube,1
-PER,Periscope,1
+ORG,Periscope,1
 ORG,Smart Air Fryer,1
 PER,Sony,2
 LOC,Redmond,6
 PER,Pluton,1
+PER,Osmo Mobile,1
 ORG,Wikipedia,1
 PER,Emotet,1
 ORG,M&Wine,1
 PER,Alexandre Zapolsky,1
 PER,Lucie Chat,1
 ORG,Linagora,1
-ORG,Réseaux sociaux,1
 PER,Domingo,1
 PER,cybercriminels,2
-PER,Tetris,1
+ORG,Tetris,1
 ORG,Stream for Humanity,2
 ORG,Pew Research Center,1
 ORG,Zoom,6
@@ -874,7 +822,6 @@ ORG,Médecins du monde,1
 ORG,AMD,2
 ORG,buycycle,1
 ORG,Gamel Helmets,1
-ORG,Une start-up,1
 PER,Remus,1
 PER,Romulus,1
 PER,Khaleesi,1
@@ -883,11 +830,9 @@ PER,influenceurs,1
 ORG,Cnil,2
 PER,Boa,1
 ORG,Alphabet Inc,1
-LOC,Nouvelle-Zélande,2
 ORG,Galaxy,2
 LOC,App Store,1
 PER,Indiana Jones,2
-ORG,Segway,1
 PER,LA,1
 PER,Gerald Lawson,1
 ORG,Fairchild,1
@@ -895,50 +840,44 @@ LOC,Espagne,2
 PER,étudiante,1
 PER,anglaise,1
 ORG,Zelda,2
-ORG,Covid-19,2
 ORG,Inoxtag,1
 LOC,himalayenne,1
 ORG,Vero,1
-ORG,Google Map,1
-ORG,L'UE,1
 ORG,Freebox Ultra,1
 PER,Bob,1
 ORG,Daan Tech,1
-LOC,Décathlon,2
-PER,policiers,1
-ORG,Xbox Live,2
+PER,Nicolas Doucet,1
+ORG,Team Asobi,1
 ORG,Mi TV,1
 ORG,ministère de la Culture,1
-LOC,Saint-Malo,2
 ORG,Quel Bon Plan,1
 ORG,Horizon Worlds,1
 PER,Lumière,2
 ORG,Nanoleaf,3
 PER,Canon PowerShot V10,1
 PER,Stéphane Audrand,1
+PER,iPhone 15 Pro,1
 PER,bébé,1
+ORG,eBay,1
 ORG,PlayStation Store,1
 LOC,Vivatech,1
-ORG,européenne,2
 ORG,Brain Magazine,1
 PER,Josselin Bordat,1
-PER,PDG de Niantic,1
 ORG,Gifam,2
 LOC,Malaysia,1
 ORG,Temu,2
-ORG,Internet,3
 ORG,Playstation Plus,1
+PER,Xbox,1
 ORG,Leboncoin,1
+ORG,Save,1
+PER,Charles Bocquillon,1
 ORG,Memes décentralisés,1
+PER,SearchGPT,1
 ORG,NEO Dolce Gusto,1
 ORG,Nescafé,1
 PER,LaMDA,1
-PER,WH-1000XM5,1
-PER,WH-1000XM4,3
-ORG,Neuralink,1
-ORG,Clinatec,1
 ORG,Windows Insiders,1
-PER,pirates informatiques,2
+PER,pirates informatiques,3
 ORG,Booking.com,1
 PER,Ray,1
 ORG,Beem Energy,1
@@ -947,11 +886,9 @@ PER,Laptop 3,1
 PER,Pro X,1
 ORG,PowerStream,1
 ORG,G7 ThinQ,1
-PER,G5,1
 PER,Stonehenge,1
 LOC,Danemark,1
 PER,Flash,1
-PER,TIDYE-1b,1
 PER,Terre,1
 PER,Fairbuds,1
 ORG,Nuance,1
@@ -965,7 +902,7 @@ PER,James Cameron,1
 ORG,cybersécurité,1
 LOC,Perdue,1
 ORG,Prime Vidéo,1
-ORG,Skype,1
+ORG,Skype,2
 PER,Copine trop attachée,1
 PER,Anthony Bourbon,1
 PER,Squikit,1
@@ -989,8 +926,6 @@ ORG,Gameboy,1
 ORG,Megadrive,1
 PER,développeurs,2
 PER,Van Gogh,1
-ORG,Musée d'Orsay,1
-LOC,Auvers-sur-Oise,1
 PER,Zuckerberg,1
 ORG,The Verge,1
 ORG,La Ligue Corpo,1
@@ -1000,14 +935,18 @@ PER,M1,1
 ORG,W3Techs,1
 ORG,Alexa,2
 PER,Phil Spencer,1
+LOC,CES 2025,1
 LOC,Nintendo 64,1
 PER,Cosmo Wright,1
 ORG,Digital Services Act,1
+PER,conseil de surveillance,1
+ORG,Microsoft Teams,2
 ORG,BlueSky,1
 ORG,CES 2025,2
 PER,Hella,1
 ORG,Google Street,1
 PER,H24,1
+PER,Quishing,1
 LOC,Irlande,1
 PER,Grégory Veret,1
 ORG,Xooloo,1
@@ -1032,97 +971,89 @@ PER,Aquos R6,1
 PER,TextStyleBrush,1
 ORG,Journées de la réparation,1
 ORG,Journées nationales de la réparation,1
-PER,Ultra,1
+PER,Galaxy S25,1
+PER,S25+,1
+PER,S25 Ultra,1
 ORG,Facebook Messenger,1
 ORG,Ring,1
 LOC,Venezuela,1
-ORG,WWDC,2
+ORG,WWDC,1
 PER,Hyperboom,1
 ORG,Ears,1
 PER,millenials,1
 ORG,Xbox Series X,1
-ORG,Back Market,1
-ORG,Cdiscount,1
+PER,femmes,1
 PER,héroïnes,1
 ORG,NeoVoice,1
+PER,entrepreneurs,1
 PER,Scarlett Johansson,1
-ORG,Mixer,1
-PER,pirate informatique,1
-ORG,programme PHP,1
+PER,pirate,1
+ORG,PHP,1
 ORG,Mediatonic,1
 ORG,Nest Audio,1
 PER,IShowSpeed,1
+ORG,Fire TV,1
 ORG,Xbox Game Pass,4
 LOC,Bordeaux,1
 PER,Julien Mayeux,1
 ORG,You.com,1
-PER,The End,1
-ORG,Conseil d’État,1
 ORG,X.com,1
 PER,Mounir Mahjoubi,1
 PER,Chloé Gervais,1
 PER,Abrègefrère,1
 ORG,TikTokeur,1
 ORG,One Plus,2
-PER,Pac-Man,1
-LOC,Notre-Dame,1
 ORG,Autodesk,1
-ORG,Counter-Strike,2
 PER,Google,1
 ORG,FAA,1
 PER,Joséphine Baker,1
 PER,Simone Veil,1
 PER,Marianne,1
-PER,Jeanne d’Arc,1
 PER,Marie Curie,1
 PER,Sophie Adeno,1
-PER,Covid-19,3
+LOC,Parlement européen,1
+ORG,GAFAM,3
 ORG,Xbox One,1
 ORG,Xbox Series,1
 ORG,Nest,2
 LOC,Pékin,2
-PER,adolescents,1
-ORG,GAFAM,2
+ORG,Samsung Galaxy,1
 ORG,Samsung Mobile,1
 ORG,Galaxy S24,1
 PER,TM Roh,1
 PER,Baptiste Robert,1
+ORG,Crowdstrike,1
 PER,Messenger,1
 PER,Marc Zuckerberg,1
 ORG,Studio Pro,1
 ORG,Beats Audio,1
-ORG,L’EVA League,1
 ORG,Mastrad,1
 ORG,GMail,1
-ORG,RomUniverse,1
 ORG,Killnet,2
-ORG,Microsoft Teams,1
 PER,Meissner,1
 PER,Pico,1
 ORG,The Legend of Zelda,2
-PER,WH-1000XM6,1
-ORG,Galaxy Fold,1
 PER,W20,1
 PER,Hawk Tuah Girl,1
-PER,Jean-Michel Jarre,1
 ORG,Alef Aeronautics,1
 ORG,Projet Wing,1
 LOC,américain,1
-ORG,Kaspersky,3
+ORG,Kaspersky,4
 ORG,Ezviz,1
-PER,Pixel,2
 PER,Free,1
 ORG,hackers,2
 PER,Optimus,1
 PER,Stéphanie de Vanssay,1
 ORG,4chan,1
 ORG,Avast,2
+PER,utilisateurs,1
 PER,Meredith Whittaker,1
 LOC,Jérusalem,1
 PER,Super Mario,1
 ORG,spatiale polonaise,1
-LOC,Banque d’Angleterre,1
-ORG,Législatives 2022,1
+PER,Sunita Williams,1
+PER,Législatives,1
+PER,mèmes,1
 ORG,Lépine,1
 ORG,Smartlet,1
 LOC,Arabie saoudite,1
@@ -1130,9 +1061,6 @@ ORG,World Cup,1
 ORG,Space X,3
 PER,Polaris Dawn,1
 LOC,Kyoto,1
-PER,Métavers,1
-PER,Ray-Ban,1
-PER,Ariane,1
 ORG,World of Warcraft,1
 PER,WoW,1
 LOC,Play Store,2
@@ -1141,15 +1069,15 @@ LOC,Bezons,1
 ORG,Station spatiale internationale,1
 ORG,Google Street View,1
 ORG,Road Trip,1
-PER,MrBeast,3
 PER,Despacito,1
+ORG,Honor,3
 ORG,Hoover,1
 PER,Black Friday,1
 ORG,Skiif,1
 PER,Waze,1
 ORG,Web,3
 ORG,Popcorn Time,1
-PER,Among Us,1
+ORG,Among Us,1
 ORG,Roblox,2
 ORG,Calex,1
 LOC,Carrefour,1
@@ -1163,9 +1091,7 @@ PER,influenceuse beauté,1
 PER,jeune femme,1
 PER,Negan,1
 ORG,The Walking Dead,1
-PER,Tibo InShape,3
 ORG,Eurojust,1
-ORG,Windows Phone,1
 PER,Thom Gruhler,1
 ORG,Blyynd,1
 ORG,Manticore Games,1
@@ -1173,16 +1099,20 @@ ORG,Lightroom,1
 ORG,Next Mobiles,2
 PER,Louer,1
 PER,Neo,1
-PER,Juj’urbex,1
+LOC,Nokia,1
+PER,XL,1
 LOC,lyonnaise,1
 PER,Hérode,1
 PER,Lucie,1
 PER,Heston,1
 PER,ministre du Travail,1
+PER,Prince of Persia,1
+ORG,Montpellier,1
 ORG,Safari,1
 PER,Barres de son,1
 PER,Salt Bae,1
 ORG,Bosch,3
+PER,Williwaw,1
 ORG,américaine de protection des consommateurs,1
 PER,John McFall,1
 ORG,TikTok Lite,1
@@ -1191,8 +1121,10 @@ ORG,DS Automobiles,1
 ORG,The Phone,1
 ORG,Kobo,1
 ORG,Proscenic,1
-ORG,Abrège Frère,1
+PER,Vive Flow,1
+PER,Ammo,1
 PER,Ammo the king,1
+ORG,Abrège Frère,1
 ORG,CertiDeal,1
 PER,Laure Cogen,1
 ORG,Sony Mobile,1
@@ -1204,16 +1136,17 @@ LOC,Marseille,2
 ORG,Bouygues Telecom,1
 ORG,écoles de la capitale chinoise,1
 ORG,DSA,1
-ORG,SFR,3
+ORG,SFR,1
 ORG,Bouygues,1
 ORG,Indexia,1
 ORG,Télescope James Webb,1
 LOC,Pluton,1
 LOC,Charon,1
 PER,Flubot,1
+PER,MoGo,1
 ORG,Nextdoor,1
 PER,Sarah Friar,1
-ORG,JO,2
+ORG,JO,1
 ORG,REvil,1
 LOC,Vercelli,1
 LOC,Milan,1
@@ -1221,31 +1154,30 @@ LOC,Italie,1
 ORG,Google Ireland Limited,1
 PER,Jay Z,1
 ORG,Avis,1
+ORG,médias,1
+ORG,certificat numérique,1
+ORG,téléphones Android,1
 ORG,Iki,1
-PER,candidats de téléréalité,1
-PER,stars de téléréalité,1
 PER,Pokémon Go,1
 ORG,Duux,1
 PER,Lionel Paris,1
 ORG,Netgear,1
-PER,Tmax,1
+ORG,Microsoft Store,2
 ORG,GTA,1
 ORG,Instragram,1
 LOC,Grand Rex,1
 ORG,Royole,2
 PER,FlexPai,1
+PER,AI Pin,1
+PER,Pin,2
 LOC,PlayStore,1
-ORG,Île-de-France Mobilités,1
-LOC,Hauts-de-France,1
 ORG,Atmos Gear,1
 ORG,Phemedrome,1
 LOC,Twitch,2
-PER,Fairbuds XL,1
 ORG,Braun,2
 ORG,Narcotiques Anonymes,1
 LOC,Metaverse,1
 PER,Mate Xs,1
-PER,Influenceurs,1
 ORG,de la concurrence,1
 ORG,Intuitive Machines,2
 PER,Disney,1
@@ -1253,26 +1185,22 @@ LOC,Noël,1
 ORG,Pebble Gear,1
 ORG,Chat GPT,1
 ORG,Project Zero,1
-PER,Etats-Unis,1
 ORG,Musique,1
 ORG,Enhanced Safe Browsing,1
 ORG,Europa Clipper,1
-PER,Jupiter,1
 ORG,Office 365,1
 PER,Cerfia,1
 PER,AlertesInfos,1
-PER,Google Assistant,1
 PER,Jamel Debbouze,1
 PER,Vincent Cassel,1
 PER,Élise Lucet,1
 ORG,CovidTracker,1
 ORG,Elyze,1
-LOC,Nouvelle-Galles du Sud,1
+PER,Euro 2021,1
 ORG,Xbox Family Settings,1
 LOC,London,1
 LOC,Loiret,1
 ORG,hôpital,1
-PER,Pierre-Édouard Stérin,1
 ORG,Cerfia,1
 PER,iPad Pro,1
 PER,Apple Pencil Pro,1
@@ -1280,7 +1208,6 @@ LOC,Bercy,1
 LOC,Palestine,1
 PER,joueur,1
 PER,joueuse,1
-ORG,commission d'enrichissement de la langue française,1
 PER,DeepSeek,1
 PER,Willen,1
 ORG,Bitcoin,2
@@ -1298,7 +1225,6 @@ PER,réalisatrice,1
 PER,Emberton,1
 PER,Recall,1
 LOC,californien,1
-ORG,Microsoft Store,1
 PER,Coronavirus,2
 ORG,Play Store,1
 ORG,Android Edge,1
@@ -1312,7 +1238,6 @@ PER,enfants maltraités,1
 ORG,boks,1
 LOC,Cupertino,2
 PER,Sing,1
-PER,iOS,1
 PER,génération Z,1
 ORG,Pokémon GO,1
 LOC,monde réel,1
@@ -1326,18 +1251,18 @@ ORG,Vingt entreprises du numérique,1
 PER,Ronan Allain,1
 PER,Starship,1
 ORG,Nothing,1
-ORG,Sega,1
+ORG,Sega,2
 ORG,Google Photos,1
-ORG,Elon Musk,2
+ORG,Elon Musk,3
 PER,Bard,1
 PER,ZombieLoad,1
 ORG,RSF,1
+ORG,réseau social,1
 ORG,Mistral AI,2
-ORG,MPEG-4,1
+ORG,James Webb,1
 ORG,fédérale du commerce,1
 ORG,syndicat des éditeurs de logiciels de loisirs,1
 PER,Nicolas Vignolles,1
-PER,CES 2023,1
 ORG,Dolby Atmos,2
 PER,Apple Intelligence,1
 ORG,DMA,1
@@ -1348,19 +1273,15 @@ ORG,Tekken,1
 ORG,Street Fighter,1
 PER,Fidelio X3,1
 LOC,Floride,2
-PER,Crew-10,1
 PER,HarmonyOS,1
 ORG,SkyDrive,1
 ORG,OneDrive,2
 ORG,HighWind,1
 ORG,Wifi,1
 ORG,ExxonMobil,1
-ORG,nationale,1
 PER,LGBT,1
 ORG,Palworld,1
-ORG,Pokémon,1
-ORG,Oscar de la science,1
-PER,Michel Sadelain,1
+ORG,YouTube Red,1
 ORG,Wu Dao,1
 ORG,IA américaine,1
 PER,Kindle Scribe,1
@@ -1369,7 +1290,6 @@ ORG,Mediapart,1
 ORG,The Guardian,1
 ORG,La Vanguardia,1
 ORG,Dagens Nyheter,1
-ORG,Ouest-France,2
 ORG,Sud Ouest,1
 ORG,Tuttle Twins,1
 LOC,Argentine,1
@@ -1380,91 +1300,73 @@ ORG,Bugali,1
 PER,David Chavalarias,1
 PER,Jony Ive,1
 PER,Squid Game,1
+ORG,Rovio,1
 ORG,Sommet IA,1
-ORG,L’Élysée,1
 ORG,cartels mexicains,1
 ORG,GTA Online,1
 PER,Avatar,1
 ORG,PC,1
-LOC,L'UE,1
-ORG,L’Oréal,1
 PER,Valérie Piau,1
-ORG,réseau social X,1
 ORG,Cloudfare,1
-LOC,Pays-Bas,1
 ORG,Galaxy S20,1
 ORG,Cybersécurité,1
 LOC,Netflix,1
-LOC,sud-coréenne,1
 ORG,Outlook,2
 PER,One Outlook,1
-ORG,Deepseek,1
-PER,Marie-Laure Denis,1
 ORG,Teebike,1
 PER,OneUp,1
 ORG,Edge,1
 ORG,Sidecar,1
+PER,Mac,1
 ORG,Victoires de la Musique,1
-PER,L’Impératrice,1
 PER,Aya Nakamoura,1
-PER,Deux streamers,1
-ORG,X (ex-Twitter),1
 ORG,My Moony,1
 ORG,grandes entreprises du numérique,1
 ORG,Capté,1
 PER,Honor Pad,1
-ORG,Groupement des marques d’appareils pour la maison,1
 ORG,Biogents,1
 PER,Satya Nadella,1
 PER,Steve Ballmer,1
-ORG,Conseil français des associations pour les droits de l'enfants (Cofrade),1
 PER,Lio,1
 PER,Cantat,1
 LOC,Maghreb,1
-LOC,Moyen-Orient,1
 ORG,Victrola Stream Carbon,1
-PER,Works With Sonos,1
-ORG,Halte à l’obsolescence programmée,1
-PER,Xperia Z5,1
-PER,nippon,1
 ORG,de Joe Biden,1
 PER,iPhone 13 Pro,1
 PER,13 Pro,1
-LOC,Commission européenne,2
 ORG,Trump,1
 PER,XL7S,1
 PER,MacBook Air,2
-ORG,Ikea,1
 PER,Natalie Reynolds,1
+ORG,Arianespace,1
 ORG,Gafam,1
 ORG,Ultimo Bastion,1
 PER,Jota Pov,1
+ORG,Pin,1
 LOC,Biélorussie,1
 ORG,compagnie ferroviaire publique,1
 PER,Kevin Mitnick,1
 LOC,Mongolie,1
 PER,Khankhuuluu mongoliensis,1
-PER,les carlins,1
-PER,les chats persans,1
-PER,les éleveurs,1
+PER,carlins,1
+PER,chats persans,1
+PER,éleveurs,1
 ORG,JBL,1
 PER,SE,1
 PER,iPhone SE,2
 LOC,Nasa,1
 PER,iPhone 8,1
-ORG,Riot Games France,1
-PER,GPT-4 Turbo,1
+PER,Riot Games France,1
 ORG,BlueTwelve,1
 PER,Vénus,1
 PER,Berger,1
 ORG,Système solaire,1
 ORG,Euro de Foot,1
 ORG,Le Maître du roast,1
+LOC,Panasonic,1
 PER,WWDC,1
-ORG,ZX Spectrum,1
 ORG,Statista,1
 ORG,XGIMI,2
-ORG,Crew-10,1
 LOC,Hong Kong,1
 LOC,resto,1
 LOC,ciné,1
@@ -1486,18 +1388,18 @@ ORG,xCloud,1
 PER,Loïc Duval,1
 ORG,01Net,1
 ORG,NVIDIA,1
+PER,Piou piou,1
 ORG,Activision Blizzard,1
 ORG,Bissel,1
-ORG,Salon de l'électronique grand public,1
 PER,Jeux Olympiques,1
 ORG,Electrolux,2
-ORG,Molotov.TV,1
+ORG,Internets,1
 PER,S10,1
 PER,S10e,1
 PER,Raphaël Gaillard,1
-PER,PS5,1
+ORG,Final Fantasy XVI,1
+ORG,PS5,2
 ORG,Euro 2021,1
-PER,Avis d'experts,1
 PER,Deadpool,1
 PER,Il pirate,1
 ORG,Ouest France,1
@@ -1505,6 +1407,7 @@ PER,streameurs,1
 LOC,PlayStation Store,1
 PER,Aurélie Jean,1
 ORG,IPhone,1
+PER,Pixel,1
 PER,Microsoft Editor,1
 PER,Anaïs Libolt,1
 ORG,Dolby Laboratories,1
@@ -1512,8 +1415,6 @@ ORG,Vision Pro,1
 PER,police,1
 ORG,police américaine,1
 ORG,uTorrent,1
-PER,Eva Evans,1
-ORG,Prime Video,1
 PER,Skype,1
 PER,OneNote,1
 LOC,iPad,1
@@ -1532,20 +1433,19 @@ PER,célébrités,1
 PER,personnalités,1
 ORG,Snapdragon,1
 ORG,Google Search Quality,1
+LOC,Commission européenne,1
 PER,Sylvain Chiron,1
 LOC,Texas,2
+LOC,Décathlon,1
 ORG,Rockrider,1
-ORG,Super Mario Bros,1
 PER,Charles Martinet,1
 PER,Luigi,1
 PER,Wario,1
 PER,Waluigi,1
-LOC,Seine-Saint-Denis,1
 LOC,Dugny,1
 ORG,Digital Realty,1
 ORG,La Poste Mobile,1
 ORG,Lockbit 3.0,1
-ORG,Vega-C,1
 ORG,Bosch eBike Systems,1
 PER,Altman,1
 ORG,Open AI,1
@@ -1555,7 +1455,6 @@ ORG,Rolling Stone,1
 ORG,DignifAI,1
 PER,Kristen Stewart,1
 PER,Miley Cyrus,1
-PER,cybercriminel,1
 ORG,Lexman,1
 PER,Defender Antivirus,1
 PER,loup,1
@@ -1567,29 +1466,29 @@ PER,Deux Japonais,1
 PER,Claude,1
 PER,Georges,1
 ORG,FamiNum.com,1
-LOC,Maison-Blanche,2
-ORG,Zelensky-Trump,1
 LOC,Lannion,1
 PER,Jourdan Louise,1
 ORG,Bloomberg,1
 ORG,Freeletics,1
 ORG,Runtastic,1
 ORG,8fit,1
-ORG,Groupement des marques d’appareils pour la maison (Gifam),1
 PER,Miss IA,1
+PER,Meta,1
 ORG,Nations unies,1
 ORG,FarmVille,1
 PER,Xr,2
 PER,iPhone 11 Pro,1
 PER,iPhone Pro Max,1
 PER,WhatsApp,1
-PER,Mickael Dell’ova,1
+ORG,Jeu vidéo,1
+LOC,Huawei,1
+LOC,Galaxy Note,1
 PER,iPhone 15,1
-ORG,PS5,1
 ORG,FluBot,1
 ORG,FDJ,1
 PER,Pohoiki Beach,1
 ORG,Cour suprême américaine,1
+PER,Tuto,1
 ORG,Summer Game Fest,1
 PER,Lena,1
 ORG,premier voyagiste mondial,1
@@ -1606,15 +1505,15 @@ PER,Tikino,1
 PER,papa,1
 PER,maman,1
 PER,Whitney Wolfe Herd,1
-PER,LG Wing,1
+PER,LG,1
 ORG,LG Electronics,1
-ORG,Self Service Repair Store,1
 PER,Carrie Bradshaw,1
 PER,Nicolas Sarkozy,1
 PER,Giulia Sarkozy,1
 ORG,Polaroid,1
 PER,iPad Mini,1
 ORG,Red Hat,1
+PER,Voie Lactée,1
 ORG,CrowdStrike,1
 PER,Quitter X,1
 PER,STAMINA,1
@@ -1631,24 +1530,24 @@ ORG,Isar Aerospace,1
 LOC,Nîmes,1
 ORG,BTP,1
 PER,Donkey Kong,1
-ORG,géants de l'IA,1
-ORG,Macron,1
 PER,Clara Chappaz,1
+ORG,Macron,1
 PER,LLaMA,1
 ORG,Lunar Reconnaissance Orbiter,1
 PER,Motorola Razr,1
 LOC,Mobile World Congress,1
+PER,ZenBook Duo,1
 PER,Daam,1
 LOC,Singapour,1
 PER,JetClean,1
 ORG,Vileda,1
 PER,Marshall Acton III,1
 ORG,smartphone,1
+ORG,Wayfe,1
 ORG,Ecobox PC,1
 PER,travailleurs,1
 ORG,Olvid,1
 LOC,Amérique du Sud,1
-PER,Stéphane Richard,1
 ORG,France Digitale,1
 ORG,Colossal Biosciences,1
 PER,jeunes acheteurs,1
@@ -1656,28 +1555,24 @@ LOC,iCloud,1
 PER,Rachel True,1
 PER,iPhone Xs,1
 PER,Xs,1
+ORG,Sécurité sociale,1
 ORG,Viamedis,1
-ORG,Sept éditeurs de jeux vidéo,1
-ORG,associations de consommateurs,1
 ORG,Darkside,1
 LOC,Tiananmen,1
 PER,Asma Mhalla,1
 ORG,Lidl,1
 LOC,URSS,1
-ORG,Activision-Blizzard,2
+PER,Spoutnik,1
 ORG,Logitech,1
 ORG,Google Workspace,1
 ORG,EyeLights,1
 PER,PDG de Microsoft,1
-PER,gen Z,1
 ORG,Uswitch,1
-PER,Smartphone,1
 PER,Internet,1
-ORG,Une équipe internationale de chercheurs,1
+ORG,Une équipe internationale,1
 PER,Gaspard Koenig,1
 ORG,GénérationLibre,1
 ORG,Beem,1
-LOC,Place de la Paix,1
 PER,Osmo Pocket,1
 ORG,Chips Act,1
 ORG,Minttt,1
@@ -1689,7 +1584,6 @@ ORG,constructeurs automobiles,1
 ORG,Marathon de Paris,1
 PER,Olivier Gaillard,1
 PER,Perplexity,1
-PER,Door Keeper,1
 ORG,Somfy,1
 LOC,Parc des Expositions,1
 LOC,porte de Versailles,1
@@ -1701,48 +1595,45 @@ ORG,Fitify,1
 ORG,médiation des communications électroniques,1
 ORG,Suno,1
 PER,Flexpai,1
-LOC,Saint-Martin,1
-PER,Pin,1
-PER,Rabbit R1,1
-ORG,Take-Two,1
+ORG,République,1
 ORG,Zynga,1
 LOC,Guangzhou,1
 LOC,Hefei,1
-LOC,Champs-Elysées,1
 PER,Adrian Dittmann,1
 PER,Dittmann,1
 PER,Furbo,1
 PER,Des nuits,1
 PER,cerveau,1
 ORG,Darknet,1
+LOC,Sony,1
 ORG,BotenaGo,1
 ORG,Netatmo,2
 ORG,Galaxy S5,1
 PER,Razr,1
-PER,IM-2,1
 LOC,Angers,1
 ORG,French Tech,1
 PER,Dyad,1
 PER,Romain Badouard,1
-ORG,L’Etat,1
 PER,Anne,1
 PER,Brad Pitt,1
 PER,Marwan Ouarab,1
-ORG,TF1,1
 ORG,Gucci,1
 PER,Claude 3,1
 ORG,Anthropic,1
 ORG,Orosound,1
 ORG,King,1
 PER,experts,1
+ORG,forums de piratage,1
 ORG,YesYes,1
 PER,Man,1
 ORG,Vivoka,1
 PER,Kratos,1
 PER,Atreus,1
 ORG,Hubs,1
+LOC,iOS,1
 LOC,Windows 10,1
 PER,9 ans,1
+PER,Macintosh,1
 PER,Pokimane,1
 ORG,Le Mémorial de Caen,1
 PER,Kléber Arhoul,1
@@ -1754,13 +1645,17 @@ PER,Les éditeurs,1
 ORG,NordVPN,1
 ORG,gouvernement japonais,1
 ORG,Le Dénicheur,1
+PER,Léna Situations,1
+PER,Gabrielle Chanel,1
+PER,Ines de la Fressange,1
+PER,Chantal Thomass,1
+PER,Jean Paul Gaultier,1
+ORG,musée Grévin,1
 ORG,Rare,1
 PER,Gregg Mayles,1
 ORG,Valorant,1
 PER,Andy Ho,1
 PER,Andreas Mogensen,1
-ORG,Total,1
-PER,Killer Instinct,1
 ORG,Double Helix Games,1
 PER,un expert,1
 PER,un grand spécialiste,1
@@ -1771,18 +1666,14 @@ ORG,Intellivision,1
 PER,Tommy Tallarico,1
 LOC,saoudite,1
 ORG,Nebula,1
-ORG,Osiris-Rex,1
 PER,Angry Birds,1
 LOC,Google Play,1
 ORG,Apple Music Voice,1
 ORG,eurodéputés,1
 PER,Pikachu,1
 LOC,Turquie,1
-ORG,CSO-3,1
-PER,Européens,1
 ORG,Babyliss,1
 PER,semaine du cerveau,1
-PER,lanceuse d’alerte,1
 LOC,République,1
 PER,Craig Federighi,1
 PER,NXTWear S,1

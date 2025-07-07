@@ -18,7 +18,6 @@ ORG,Apple,224
 PER,Elon Musk,69
 ORG,Samsung,71
 ORG,Huawei,28
-LOC,Etats-Unis,56
 ORG,Specialized,1
 ORG,AI,2
 PER,Sam Altman,14
@@ -63,16 +62,13 @@ PER,Nadella,1
 PER,Bill Gates,3
 PER,Paul Allen,1
 LOC,Albuquerque,1
-LOC,Nouveau-Mexique,1
 ORG,Row,1
 ORG,s,7
 ORG,Rowenta,1
 ORG,Mozilla,2
 ORG,Apple Intelligence,1
 ORG,BBC,1
-LOC,Grande-Bretagne,2
 PER,Lady Gaga,1
-LOC,États-Unis,7
 ORG,Hoover,2
 ORG,Fondation Descartes,1
 ORG,Nintendo,29
@@ -103,7 +99,6 @@ LOC,la France,12
 PER,Christophe Lafaye,1
 ORG,Body Minute,1
 PER,Laurène Lévy,1
-ORG,État-major,1
 ORG,Armée,1
 ORG,MediaTek,2
 ORG,CNIL,2
@@ -120,7 +115,6 @@ ORG,Depeche Mode,1
 ORG,Muse,2
 LOC,Stade de France,1
 PER,George Lucas,1
-ORG,Micromania-Zing,1
 ORG,Gamestop,1
 PER,AD Laurent,1
 PER,Aurore Bergé,1
@@ -135,7 +129,6 @@ PER,Nick Szabo,1
 ORG,Moustache Bikes,1
 PER,Trump,15
 ORG,Segway,2
-ORG,Segway-Ninebot,1
 LOC,Canada,3
 PER,Tobi Lütke,1
 ORG,Bose,8
@@ -185,7 +178,6 @@ PER,Laurent Glaser,1
 PER,Oussama Ammar,1
 ORG,The Family,1
 ORG,Arlo,1
-ORG,Don’t Nod,1
 ORG,Tik,2
 ORG,X...,1
 LOC,Nice,2
@@ -212,7 +204,6 @@ ORG,Tidal,1
 PER,Jay Z,2
 ORG,Autorité de la concurrence française,1
 ORG,Inoxtag,1
-PER,Jean-Marie Le Pen,1
 ORG,Front national,1
 ORG,Dodo,1
 LOC,Pompéi,1
@@ -247,13 +238,10 @@ LOC,Los Angeles,4
 ORG,Avidsen,2
 LOC,Amérique du nord,1
 ORG,Qwant,1
-PER,Jean-Claude Ghinozzi,1
 PER,Xavier Niel,4
 ORG,Booking,2
 LOC,Antarctique,1
 PER,Rémi Hontang,1
-PER,Jean-Christophe Levescot,1
-ORG,UFC-Que choisir,1
 LOC,La France,4
 LOC,Italie,3
 LOC,cratère Jezero,1
@@ -301,15 +289,12 @@ ORG,Jabra,2
 ORG,HelloQuitteX,1
 ORG,AppleTV+,1
 PER,Emmanuel Macron,12
-LOC,Royaume-Uni,6
 PER,Sandra Auboy,1
-LOC,Seine-Maritime,1
 ORG,Firefly Aerospace,1
 ORG,Instagram,5
 LOC,Londres,3
 ORG,Qi,1
 ORG,Qiara,1
-LOC,université UNC-Chapel Hill,1
 PER,Andrew Chin,1
 ORG,General Motors,1
 ORG,Humane,1
@@ -328,13 +313,9 @@ ORG,Dolby,2
 ORG,Atmos,1
 ORG,Dolby Atmos,2
 LOC,Afrique du Sud,2
-LOC,mini-Lune,1
 ORG,The Anonymous Project,1
 ORG,Epson,1
 ORG,Handi Exceller,1
-LOC,Grand-Est,1
-LOC,Musée d'Orsay,3
-LOC,Musée d’Orsay,1
 LOC,Ukraine,2
 LOC,Russie,5
 ORG,Marshall,7
@@ -349,7 +330,6 @@ ORG,Encode Justice,1
 ORG,Crowdstrike,2
 LOC,Afrique,2
 ORG,Vivatech,1
-PER,Jean-Noël Barrot,2
 ORG,ministre du Numérique,1
 LOC,Sénat,2
 PER,Ophenya,1
@@ -416,7 +396,6 @@ PER,Guava Shuishui,1
 ORG,Brut,1
 PER,Eric Bothorel,1
 ORG,Renaissance,2
-LOC,5e circonscription des Côtes-d’Armor,1
 ORG,Baidu,1
 ORG,Electrolux,4
 ORG,Skylum,1
@@ -430,7 +409,6 @@ PER,Tibo InShape,4
 PER,président de la République,3
 PER,TiboInShape,1
 ORG,TF1,2
-ORG,McDonald’s,1
 ORG,Paypal,1
 ORG,Metallica,2
 PER,Billie Eilish,1
@@ -483,15 +461,12 @@ PER,Terraillon,1
 PER,Mistral,1
 ORG,Solar Brother,1
 ORG,Oxford University Press,1
-LOC,New-York,1
-PER,Rui-Siang Lin,1
 ORG,Sure Petcare,1
 PER,Jésus,1
 ORG,Peugeot,1
 LOC,Tarnais,1
 LOC,Irlande,2
 LOC,Argentine,2
-PER,Najat Vallaud-Belkacem,1
 ORG,RT,2
 ORG,Sputnik,2
 LOC,Moscou,1
@@ -524,7 +499,6 @@ PER,Romulus,1
 PER,Khaleesi,1
 ORG,Cnil,4
 ORG,Alphabet Inc,1
-LOC,Nouvelle-Zélande,2
 ORG,bit,1
 PER,Gerald Lawson,1
 LOC,Espagne,2
@@ -535,7 +509,6 @@ PER,Nicolas Doucet,1
 ORG,Team Asobi,1
 ORG,Décathlon,2
 ORG,ministère de la Culture,1
-LOC,Saint-Malo,2
 LOC,Air,1
 ORG,Nanoleaf,2
 LOC,le Japon,1
@@ -562,7 +535,6 @@ ORG,EcoFlow,1
 LOC,Stonehenge,1
 LOC,Danemark,1
 ORG,Adobe,1
-LOC,TIDYE-1b,1
 ORG,Nuance,1
 LOC,Redmond,3
 ORG,Goldin Auctions,1
@@ -581,7 +553,6 @@ LOC,Méta,1
 PER,Van Gogh,1
 LOC,musée d,1
 LOC,Orsay,1
-LOC,Auvers-sur-Oise,1
 ORG,Big Tech,2
 ORG,The Verge,1
 ORG,Team Vitality,1
@@ -621,13 +592,11 @@ LOC,L,3
 ORG,Spotify,1
 LOC,Bordeaux,1
 PER,Julien Mayeux,1
-ORG,Conseil d’État,1
 LOC,États,1
 ORG,ta,1
 PER,Mounir Mahjoubi,1
 ORG,État,1
 PER,Chloé Gervais,1
-LOC,Notre-Dame,1
 ORG,Autodesk,1
 ORG,département américain de la Justice,1
 PER,David Balto,1
@@ -652,13 +621,10 @@ PER,Marc Zuckerberg,1
 ORG,Beats Audio,1
 LOC,Astéroïde 2024 YR4,1
 ORG,Mastrad,1
-ORG,Samsung-Apple,1
-LOC,Sud-Coréen,1
 LOC,Russes,1
 PER,Meissner,1
 ORG,Yale,1
 PER,Hawk Tuah Girl,1
-PER,Jean-Michel Jarre,1
 ORG,Alef Aeronautics,1
 ORG,Kaspersky France,1
 PER,Stéphanie de Vanssay,1
@@ -745,8 +711,6 @@ LOC,Grand Rex,1
 ORG,Royole,2
 LOC,Loi,1
 ORG,Affaires,1
-ORG,Île-de-France Mobilités,1
-LOC,Hauts-de-France,1
 ORG,Atmos Gear,1
 PER,Banger,1
 ORG,Club,1
@@ -764,10 +728,8 @@ ORG,Samsung Lane,1
 PER,Jamel Debbouze,1
 PER,Vincent Cassel,1
 PER,Élise Lucet,1
-LOC,Nouvelle-Galles du Sud,1
 ORG,PlayStation London,1
 LOC,Loiret,1
-PER,Pierre-Édouard Stérin,1
 ORG,Cerfia,1
 LOC,Bercy,1
 PER,will.i.am,1
@@ -789,16 +751,13 @@ PER,Ming Chi Kuo,1
 PER,Labubu,1
 LOC,Ring,1
 PER,Perrikaryal,1
-LOC,Angeac-Charente,1
 PER,Ronan Allain,1
 ORG,RSF,1
 LOC,télescope,1
-ORG,Agence fédérale du commerce des Etats-Unis,1
 PER,Nicolas Vignolles,1
 ORG,iRobot,1
 LOC,Floride,2
 ORG,ExxonMobil,1
-LOC,Franco-Canadien,1
 PER,Michel Sadelain,1
 ORG,Commission à l,1
 ORG,efficacité gouvernementale,1
@@ -807,7 +766,6 @@ ORG,Mediapart,1
 ORG,The Guardian,1
 ORG,La Vanguardia,1
 ORG,Dagens Nyheter,1
-ORG,Ouest-France,2
 ORG,Sud Ouest,1
 PER,han,1
 PER,David Chavalarias,1
@@ -816,29 +774,21 @@ ORG,leDéni,1
 PER,Jony Ive,1
 PER,Rovio,1
 LOC,Élysée,1
-ORG,L’Oréal,1
-ORG,Acer,1
 PER,Valérie Piau,1
+ORG,Acer,1
 ORG,Otovo,1
 ORG,Crosscall,1
-LOC,Pays-Bas,1
-LOC,les Pays-Bas,1
 ORG,OMS,1
-ORG,Activision-Blizzard,3
-PER,Marie-Laure Denis,1
 PER,George Floyd,2
-ORG,L’Impératrice,1
 PER,Aya Nakamoura,1
 ORG,Capté,1
 ORG,Biogents,1
 PER,Satya Nadella,1
 PER,Steve Ballmer,1
-ORG,Conseil français des associations pour les droits de l'enfants,1
 ORG,Cofrade,1
 PER,Lio,1
 PER,Cantat,1
 LOC,Maghreb,1
-LOC,Moyen-Orient,1
 ORG,Halte à l,1
 ORG,obsolescence programmée,1
 ORG,Europol,1
@@ -884,7 +834,6 @@ PER,Anaïs Libolt,1
 ORG,Directrice Europe Broadcast & Content,1
 ORG,Dolby Laboratories,1
 ORG,Concur,1
-ORG,Sotheby’s,1
 PER,Eva Evans,1
 LOC,E.T,1
 ORG,Makani,1
@@ -905,7 +854,6 @@ PER,Sylvain Chiron,1
 PER,Charles Martinet,1
 PER,gi,1
 PER,ario,1
-LOC,Seine-Saint-Denis,1
 LOC,Dugny,1
 ORG,Digital Realty,1
 ORG,La Poste Mobile,1
@@ -920,7 +868,6 @@ PER,Miley Cyrus,1
 ORG,Lexman,1
 PER,Indiana Jones,1
 LOC,Japonais,1
-LOC,Maison-Blanche,2
 LOC,Lannion,1
 PER,Jourdan Louise,1
 ORG,berg,1
@@ -932,7 +879,6 @@ ORG,Nations unies,1
 PER,Floyd,1
 ORG,Miele,1
 ORG,yson,1
-PER,Mickael Dell’ova,1
 LOC,Olympia,1
 ORG,FDJ,1
 LOC,Cour suprême,1
@@ -954,7 +900,6 @@ ORG,CrowdStrike,1
 ORG,KCorp,1
 ORG,Kick,1
 LOC,Norvège,1
-LOC,base d’Andoya,1
 ORG,Isar Aerospace,1
 LOC,Nîmes,1
 PER,Clara Chappaz,1
@@ -995,17 +940,14 @@ ORG,Thales,1
 PER,Olivier Gaillard,1
 ORG,Somfy,1
 LOC,Parc des Expositions de la porte de Versailles,1
+ORG,des Affaires étrangères,1
 PER,Monsieur Loyal,1
 PER,J.D Vance,1
 PER,Ursula van der Leyen,1
-ORG,des Affaires étrangères,1
-LOC,Saint-Martin,1
-ORG,Take-Two,1
 ORG,Zynga,1
 LOC,Guangzhou,1
 LOC,Hefei,1
 LOC,Apple Store,1
-LOC,Champs-Elysées,1
 LOC,Champs Elysées,1
 PER,Adrian Dittmann,1
 LOC,Silicon Vally,1
